@@ -1,7 +1,7 @@
 # LGPD pop-up + modal do Cal.com + redes
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição da Home (e do artboard Em breve)
 
 ```
@@ -11,5 +11,5 @@ Três ajustes na Home e no artboard "Em breve".
 
 2. CTA "SOLICITAR DIAGNÓSTICO": todos os botões abrem um MODAL (overlay ink 70% com blur, card surface 900x640, cantos 16px, botão × no canto) com o agendamento do Cal.com embutido: iframe de https://cal.com/eduardo-galan/consultoria-gratuita?embed=true&theme=dark. Cabeçalho do modal: eyebrow mono "DIAGNÓSTICO GRATUITO · 45 MIN" + linha muted "Escolha um horário. Sem compromisso." Mostre um placeholder do calendário dentro do card no protótipo.
 
-3. FOOTER: redes com links reais: Instagram → https://instagram.com/escalahub · LinkedIn → https://www.linkedin.com/company/escala-hub/. YouTube fica, sem link por enquanto. Links "Privacidade" e "Termos" na linha final ficam ativos e levam a páginas simples com o texto (podem cair no artboard "Em breve" por enquanto).
+3. FOOTER: redes com links reais: Instagram → https://instagram.com/escalahub · LinkedIn → https://www.linkedin.com/company/escala-hub/. Remova o YouTube. Links "Privacidade" e "Termos" na linha final ficam ativos e levam a páginas simples com o texto (podem cair no artboard "Em breve" por enquanto).
 ```
