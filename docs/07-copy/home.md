@@ -11,7 +11,7 @@ Soluções ▾ (Marketplaces · E-commerce próprio · Operação e gestão · T
 
 ## 1. Hero
 **Eyebrow:** `CONSULTORIA DE E-COMMERCE E MARKETPLACES`
-**H1:** Transformamos operações de e-commerce em negócios prontos para escalar.
+**H1 (v5, editado no Claude Design):** Ajudamos a construir e escalar sua operação de e-commerce.
 **Sub:** Estratégia, gestão e tecnologia para marcas, indústrias e sellers crescerem em marketplaces e canais próprios com mais margem, controle e previsibilidade.
 **CTA:** Solicitar diagnóstico · **Secundário:** Conhecer a Escala Hub
 **Visual:** foto/vídeo real da operação Pratelar `{Q24}`.

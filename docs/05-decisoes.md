@@ -58,3 +58,5 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-13 | Privacidade e Termos: drafts LGPD redigidos por mim em docs/legal; pop-up de cookies/LGPD no site | aprovada | Eduardo |
 | 2026-09-13 | Repo Git local iniciado; GitHub pendente de `gh auth login` do Eduardo | em andamento | gh não autenticado |
 | 2026-09-13 | YouTube fica no footer sem link até ter canal | aprovada | Eduardo |
+| 2026-09-13 | H1 da Home (editado pelo Eduardo no Claude Design): "Ajudamos a construir e escalar sua operação de e-commerce." | aprovada | Eduardo |
+| 2026-09-13 | Seção 07 — Blog na Home; até haver posts, estado "em breve" com captura de e-mail | aprovada | Eduardo |

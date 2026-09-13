@@ -19,6 +19,7 @@ Documentação viva do negócio e do produto. Atualizada a cada decisão relevan
 | prototipo/ | PNGs exportados dos artboards aprovados |
 | [legal/](legal/) | Drafts de Política de Privacidade e Termos de Uso (LGPD) |
 | [12-logo.md](12-logo.md) | Grill do logo atual e redesenho do símbolo |
+| [13-blog-ideias.md](13-blog-ideias.md) | Ideias de posts por dor e canal, com keyword e formato |
 
 ## Fases
 
