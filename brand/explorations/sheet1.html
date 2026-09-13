@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A0B;color:#F4F2EE;font-family:Inter,sans-serif;width:1440px}
+.wrap{padding:48px 56px;display:flex;flex-direction:column;gap:40px}
+h2{font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#FFB11B;margin:0 0 16px}
+.row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:20px;min-height:220px}
+.card .mark{height:120px;display:flex;align-items:center}
+.card .lbl{font:500 11px/1.5 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#9C9A94}
+.card .desc{font:400 13px/1.5 Inter;color:#9C9A94}
+.lock{display:flex;align-items:center;gap:18px}
+.wm{font-family:Sora;font-size:44px;letter-spacing:-.03em;line-height:1}
+.small{display:flex;gap:24px;align-items:flex-end}
+.small div{display:flex;flex-direction:column;align-items:center;gap:8px;font:500 10px 'JetBrains Mono';color:#9C9A94}
+.paper{background:#F4F2EE;color:#0A0A0B;border-color:#F4F2EE}
+</style></head><body><div class="wrap">
+
+<div><h2>01 — Explorações de símbolo (120px, sobre ink)</h2>
+<div class="row">
+ <div class="card"><div class="mark">
+  <svg width="120" height="120" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V80h40V40h40V0h40v120z"/><rect fill="#FFB11B" x="80" y="0" width="40" height="40"/></svg>
+ </div><div class="lbl">A1 · Degraus</div><div class="desc">Escala = escada. Três degraus sólidos, cantos retos. O topo em âmbar é o nível que o cliente alcança.</div></div>
+
+ <div class="card"><div class="mark">
+  <svg width="120" height="120" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V80h40V40h40v80z"/><rect fill="#FFB11B" x="86" y="0" width="34" height="34"/></svg>
+ </div><div class="lbl">A2 · Próximo degrau</div><div class="desc">Mesma escada, mas o degrau âmbar ainda não foi construído. "Onde você vai chegar."</div></div>
+
+ <div class="card"><div class="mark">
+  <svg width="120" height="120" viewBox="0 0 120 120"><rect fill="#FFB11B" x="0" y="86" width="34" height="34"/><rect fill="#F4F2EE" x="46" y="0" width="74" height="74"/></svg>
+ </div><div class="lbl">C · Escalar</div><div class="desc">Escala = mudar de tamanho. O pequeno vira grande. Dois quadrados, nada mais. Tech e sóbrio.</div></div>
+
+ <div class="card"><div class="mark">
+  <svg width="120" height="120" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V72h72v48z"/><path fill="#FFB11B" d="M48 0h72v72H96V24H48z"/></svg>
+ </div><div class="lbl">D · Hub em L</div><div class="desc">Dois "L" que se encaixam: o bloco que sobe (âmbar) e a base (off-white). Herda a lógica de encaixe do logo atual, sem as bolhas.</div></div>
+</div></div>
+
+<div><h2>02 — Wordmark em Sora (mesma fonte dos títulos do site)</h2>
+<div class="row" style="grid-template-columns:repeat(2,1fr)">
+ <div class="card"><div class="lock"><svg width="56" height="56" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V80h40V40h40V0h40v120z"/><rect fill="#FFB11B" x="80" y="0" width="40" height="40"/></svg><div class="wm" style="font-weight:600">Escala Hub</div></div><div class="lbl">W1 · Sora 600, cor única</div><div class="desc">Só o símbolo carrega o âmbar. Um acento por tela, como no design system.</div></div>
+ <div class="card"><div class="lock"><svg width="56" height="56" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V80h40V40h40V0h40v120z"/><rect fill="#FFB11B" x="80" y="0" width="40" height="40"/></svg><div class="wm"><span style="font-weight:600">Escala</span> <span style="font-weight:400;color:#9C9A94">Hub</span></div></div><div class="lbl">W2 · Escala 600 + Hub 400 muted</div><div class="desc">Hierarquia por peso, não por cor. "Hub" vira sistema: Metri Hub, GLN Studio seguem o mesmo padrão.</div></div>
+ <div class="card"><div class="lock"><svg width="56" height="56" viewBox="0 0 120 120"><rect fill="#FFB11B" x="0" y="86" width="34" height="34"/><rect fill="#F4F2EE" x="46" y="0" width="74" height="74"/></svg><div class="wm" style="font-weight:600">Escala Hub</div></div><div class="lbl">W1 com símbolo C</div><div class="desc"></div></div>
+ <div class="card"><div class="lock"><svg width="56" height="56" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V72h72v48z"/><path fill="#FFB11B" d="M48 0h72v72H96V24H48z"/></svg><div class="wm"><span style="font-weight:600">Escala</span> <span style="font-weight:400;color:#9C9A94">Hub</span></div></div><div class="lbl">W2 com símbolo D</div><div class="desc"></div></div>
+</div></div>
+
+<div><h2>03 — Redução e fundo claro</h2>
+<div class="row" style="grid-template-columns:1fr 1fr">
+ <div class="card"><div class="small">
+  <div><svg width="16" height="16" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V80h40V40h40V0h40v120z"/><rect fill="#FFB11B" x="80" y="0" width="40" height="40"/></svg>16</div>
+  <div><svg width="32" height="32" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V80h40V40h40V0h40v120z"/><rect fill="#FFB11B" x="80" y="0" width="40" height="40"/></svg>32</div>
+  <div><svg width="16" height="16" viewBox="0 0 120 120"><rect fill="#FFB11B" x="0" y="86" width="34" height="34"/><rect fill="#F4F2EE" x="46" y="0" width="74" height="74"/></svg>16</div>
+  <div><svg width="32" height="32" viewBox="0 0 120 120"><rect fill="#FFB11B" x="0" y="86" width="34" height="34"/><rect fill="#F4F2EE" x="46" y="0" width="74" height="74"/></svg>32</div>
+  <div><svg width="16" height="16" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V72h72v48z"/><path fill="#FFB11B" d="M48 0h72v72H96V24H48z"/></svg>16</div>
+  <div><svg width="32" height="32" viewBox="0 0 120 120"><path fill="#F4F2EE" d="M0 120V72h72v48z"/><path fill="#FFB11B" d="M48 0h72v72H96V24H48z"/></svg>32</div>
+  <div><svg width="32" height="32" viewBox="0 0 120 120"><rect fill="#141416" width="120" height="120" rx="24"/><path fill="#F4F2EE" d="M24 96V72h24V48h24V24h24v72z"/><rect fill="#FFB11B" x="72" y="24" width="24" height="24"/></svg>app icon</div>
+ </div><div class="lbl">Favicon 16 / 32 px</div><div class="desc">A1, C e D sobrevivem a 16px. O logo atual vira uma mancha nesse tamanho.</div></div>
+ <div class="card paper"><div class="lock"><svg width="56" height="56" viewBox="0 0 120 120"><path fill="#0A0A0B" d="M0 120V80h40V40h40V0h40v120z"/><rect fill="#F27A1A" x="80" y="0" width="40" height="40"/></svg><div class="wm" style="font-weight:600;color:#0A0A0B">Escala Hub</div></div><div class="lbl" style="color:#6B6963">Sobre paper: símbolo preto + âmbar-escuro</div></div>
+</div></div>
+
+</div></body></html>
