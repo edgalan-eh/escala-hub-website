@@ -16,5 +16,6 @@ Um arquivo por prompt, numerado na ordem em que rodou. Status: pendente / rodado
 | 10 | 10-home-nav-ajuste-solucoes.md | rodado |
 | 11 | 11-home-nav-gestao-loja-propria.md | pendente |
 | 12 | 12-em-breve-e-barra.md | pendente |
+| 13 | 13-lgpd-popup-e-cal.md | pendente |
 
 Regra: novo prompt = novo arquivo. Ao rodar, marcar status e anexar PNG exportado em `../prototipo/NN-nome.png`.

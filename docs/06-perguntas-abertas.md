@@ -22,3 +22,6 @@
 - ~~Q26~~ adiada · ~~Q27~~ produzem, pilar Crescimento comercial · ~~Q28~~ à parte, só na negociação.
 - ~~Q29~~ Respondida: ver 05.
 - **Q30** Planos e precificação por solução (para a fase de vendas, não para o site).
+- **Q31** YouTube: tem canal? URL. Senão tiro o ícone.
+- **Q32** Usuário/org do GitHub para o repo (após `gh auth login`).
+- **Q33** Endereço comercial (cidade/UF basta) para Privacidade e Termos.

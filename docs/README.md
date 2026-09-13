@@ -17,6 +17,7 @@ Documentação viva do negócio e do produto. Atualizada a cada decisão relevan
 | [11-claude-design.md](11-claude-design.md) | Dicas de operação no Claude Design |
 | [prompts/](prompts/README.md) | Um arquivo por prompt rodado no Claude Design, numerado, com status |
 | prototipo/ | PNGs exportados dos artboards aprovados |
+| [legal/](legal/) | Drafts de Política de Privacidade e Termos de Uso (LGPD) |
 | [12-logo.md](12-logo.md) | Grill do logo atual e redesenho do símbolo |
 
 ## Fases

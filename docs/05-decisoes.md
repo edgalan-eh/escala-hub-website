@@ -54,3 +54,7 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-13 | Ads e marketing são executados dentro da Gestão 360. Precificação e planos por solução ainda não definidos; site não exibe preço | aprovada | Eduardo |
 | 2026-09-13 | Mentoria = orientação em calls, cliente executa (marketplaces). Gestão 360 = Escala executa tudo, só para loja própria | aprovada | Eduardo |
 | 2026-09-13 | Lançar Home + página "Em breve" para todos os links internos; barra âmbar "Site em construção" no topo (única exceção à regra de âmbar em área grande, por ser temporária) | aprovada | Eduardo |
+| 2026-09-13 | CTA "Solicitar diagnóstico" → Cal.com (cal.com/eduardo-galan/consultoria-gratuita), embutido em modal | aprovada | Eduardo |
+| 2026-09-13 | Privacidade e Termos: drafts LGPD redigidos por mim em docs/legal; pop-up de cookies/LGPD no site | aprovada | Eduardo |
+| 2026-09-13 | Repo Git local iniciado; GitHub pendente de `gh auth login` do Eduardo | em andamento | gh não autenticado |
+| 2026-09-13 | YouTube fora do footer até ter URL | proposta | Sem canal informado |

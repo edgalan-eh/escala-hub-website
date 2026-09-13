@@ -106,3 +106,6 @@ Cortados: "Franquias" e "Parceiro Escala Hub".
 - CNPJ: 54.988.708/0001-21
 - WhatsApp / telefone: (11) 99795-7457 · wa.me/5511997957457
 - E-mail: contato@escalahub.com.br
+- Agenda (CTA "Solicitar diagnóstico"): https://cal.com/eduardo-galan/consultoria-gratuita
+- Instagram: @escalahub · LinkedIn: https://www.linkedin.com/company/escala-hub/ · YouTube: {sem URL ainda; ícone fora até ter}
+- Domínio: escalahub.com.br no registro.br, DNS apontando para Framer (site antigo). Trocar para Vercel no lançamento.
