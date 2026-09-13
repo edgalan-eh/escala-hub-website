@@ -57,4 +57,4 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-13 | CTA "Solicitar diagnóstico" → Cal.com (cal.com/eduardo-galan/consultoria-gratuita), embutido em modal | aprovada | Eduardo |
 | 2026-09-13 | Privacidade e Termos: drafts LGPD redigidos por mim em docs/legal; pop-up de cookies/LGPD no site | aprovada | Eduardo |
 | 2026-09-13 | Repo Git local iniciado; GitHub pendente de `gh auth login` do Eduardo | em andamento | gh não autenticado |
-| 2026-09-13 | YouTube fora do footer até ter URL | proposta | Sem canal informado |
+| 2026-09-13 | YouTube fica no footer sem link até ter canal | aprovada | Eduardo |

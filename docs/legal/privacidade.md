@@ -1,11 +1,11 @@
 # Política de Privacidade — Escala Hub
 
-**Draft LGPD (2026-09-13). Revisar com advogado antes de publicar.** Placeholders em `{ }`.
+**Draft LGPD (2026-09-13). Revisar com advogado antes de publicar.** Placeholder restante: `{data}`.
 
 Última atualização: {data}
 
 ## 1. Quem somos
-Escala Hub, CNPJ 54.988.708/0001-21, com sede em {cidade/UF}, é a controladora dos dados pessoais tratados neste site (escalahub.com.br). Contato do encarregado (DPO): contato@escalahub.com.br.
+Escala Hub Consultoria e Negócios Ltda. ("Escala Hub"), CNPJ 54.988.708/0001-21, com sede na Av. Paulista, 1636, Sala 1504/749, Bela Vista, São Paulo/SP, CEP 01310-200, é a controladora dos dados pessoais tratados neste site (escalahub.com.br). Contato do encarregado (DPO): contato@escalahub.com.br.
 
 ## 2. Quais dados coletamos
 - **Dados que você informa:** nome, e-mail, telefone/WhatsApp, empresa, canal de venda e faturamento aproximado, ao agendar um diagnóstico, usar a calculadora, assinar a newsletter ou entrar em contato.

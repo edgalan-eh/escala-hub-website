@@ -103,9 +103,11 @@ Cortados: "Franquias" e "Parceiro Escala Hub".
 - Precisa de CMS para blog e materiais. Decisão em 04.
 
 ## Dados oficiais (2026-09-13)
-- CNPJ: 54.988.708/0001-21
+- Razão social: Escala Hub Consultoria e Negócios Ltda. · Nome fantasia: Escala Hub · CNPJ: 54.988.708/0001-21 · desde 2024-05-03 · ME · CNAE: treinamento em desenvolvimento profissional e gerencial
+- Endereço: Av. Paulista, 1636, Sala 1504/749, Bela Vista, São Paulo/SP, CEP 01310-200
 - WhatsApp / telefone: (11) 99795-7457 · wa.me/5511997957457
 - E-mail: contato@escalahub.com.br
+- GitHub: usuário `edgalan-eh` (SSH ok). Repo `escala-hub-website` a criar
 - Agenda (CTA "Solicitar diagnóstico"): https://cal.com/eduardo-galan/consultoria-gratuita
-- Instagram: @escalahub · LinkedIn: https://www.linkedin.com/company/escala-hub/ · YouTube: {sem URL ainda; ícone fora até ter}
+- Instagram: @escalahub · LinkedIn: https://www.linkedin.com/company/escala-hub/ · YouTube: sem canal ainda; ícone fica no footer sem link
 - Domínio: escalahub.com.br no registro.br, DNS apontando para Framer (site antigo). Trocar para Vercel no lançamento.

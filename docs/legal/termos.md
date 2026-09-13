@@ -5,7 +5,7 @@
 Última atualização: {data}
 
 ## 1. Aceitação
-Ao acessar escalahub.com.br você concorda com estes Termos e com a Política de Privacidade. O site é operado pela Escala Hub, CNPJ 54.988.708/0001-21, {cidade/UF}.
+Ao acessar escalahub.com.br você concorda com estes Termos e com a Política de Privacidade. O site é operado pela Escala Hub Consultoria e Negócios Ltda. ("Escala Hub"), CNPJ 54.988.708/0001-21, Av. Paulista, 1636, Sala 1504/749, Bela Vista, São Paulo/SP, CEP 01310-200.
 
 ## 2. O que o site oferece
 Informações sobre os serviços de consultoria, criação e gestão de e-commerce, construção de marca e ferramentas da Escala Hub; agendamento de diagnóstico; conteúdo e calculadoras de uso gratuito.
@@ -32,4 +32,4 @@ O site pode ficar indisponível ou conter imprecisões. Na extensão permitida p
 Podemos alterar estes Termos a qualquer momento. A versão vigente é a publicada nesta página.
 
 ## 10. Lei e foro
-Lei brasileira. Foro da comarca de {cidade/UF}, salvo disposição legal em contrário.
+Lei brasileira. Foro da comarca de São Paulo/SP, salvo disposição legal em contrário.
