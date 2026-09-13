@@ -37,7 +37,7 @@ Escala (desktop): H1 64/1.05 · H2 44/1.1 · H3 28/1.2 · body 18/1.6 · small 1
 
 ## Componentes-chave
 
-- **Eyebrow numerada** (`01 — DORES`) em mono âmbar antes de cada H2, como no benchmark.
+- ~~Eyebrow numerada antes de cada H2~~ Removida em 2026-09-13 (decisão do Eduardo). Eyebrows mono só onde carregam informação (hero, Metri Hub, badges).
 - **Stat tile**: número em Sora 56px, label em mono, seta `up` quando delta.
 - **Case card**: número grande + segmento + canal (chip com cor do marketplace: ML amarelo, Shopee laranja, Amazon azul, TikTok preto/branco) + prazo + tag `[FAKE]` visível no protótipo.
 - **Botão primário**: fundo âmbar, texto ink, raio 8px, seta →. Hover: amber-deep.
