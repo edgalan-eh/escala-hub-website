@@ -36,6 +36,8 @@ export function LogoMarquee() {
           <div className="marquee-track items-center">
             <Row />
             <Row />
+            <Row />
+            <Row />
           </div>
         </div>
       </div>
