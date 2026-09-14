@@ -97,16 +97,16 @@ export const heroNodes = [
 ];
 
 export const logos = [
-  { src: "/brand/partners/mercado-livre-mono-dark.svg", alt: "Mercado Livre", h: 30 },
-  { src: "/brand/partners/amazon-logo-horizontal.svg", alt: "Amazon", h: 26, mono: true },
-  { src: "/brand/partners/shopee-logo-horizontal.svg", alt: "Shopee", h: 28, mono: true },
-  { src: "/brand/partners/tiktok-mono.svg", alt: "TikTok Shop", h: 24, label: "TikTok Shop" },
-  { src: "/brand/partners/shopify-white.svg", alt: "Shopify", h: 28 },
-  { src: "/brand/partners/woocommerce-white.svg", alt: "WooCommerce", h: 22 },
-  { src: "/brand/partners/nuvemshop.png", alt: "Nuvemshop", h: 24, mono: true },
-  { src: "/brand/partners/tray.svg", alt: "Tray", h: 24, mono: true },
-  { src: "/brand/partners/bling.svg", alt: "Bling", h: 22, mono: true },
-  { src: "/brand/partners/olist-white.svg", alt: "Olist", h: 24 },
+  { src: "/brand/partners/mercado-livre-mono-dark.svg", alt: "Mercado Livre", h: 42 },
+  { src: "/brand/partners/amazon-logo-horizontal.svg", alt: "Amazon", h: 34, mono: true },
+  { src: "/brand/partners/shopee-logo-horizontal.svg", alt: "Shopee", h: 36, mono: true },
+  { src: "/brand/partners/tiktok-mono.svg", alt: "TikTok Shop", h: 30, label: "TikTok Shop" },
+  { src: "/brand/partners/shopify-white.svg", alt: "Shopify", h: 34 },
+  { src: "/brand/partners/woocommerce-white.svg", alt: "WooCommerce", h: 34 },
+  { src: "/brand/partners/nuvemshop.png", alt: "Nuvemshop", h: 34, mono: true },
+  { src: "/brand/partners/tray.svg", alt: "Tray", h: 30, mono: true },
+  { src: "/brand/partners/bling.svg", alt: "Bling", h: 30, mono: true },
+  { src: "/brand/partners/olist-white.svg", alt: "Olist", h: 30 },
 ];
 
 export const origemTiles = [
@@ -220,7 +220,7 @@ export const footerColumns = [
     links: [
       { label: "Sobre", href: SOON },
       { label: "Blog", href: SOON },
-      { label: "Calculadora de Preços", href: SOON },
+      { label: "Contato", href: "#diagnostico" },
       { label: "Metri Hub", href: site.metrihub, external: true },
       { label: "GLN Studio", href: "#", external: true, disabled: true },
     ],

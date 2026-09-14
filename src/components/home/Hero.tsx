@@ -162,11 +162,6 @@ export function Hero() {
               Conhecer a Escala Hub
             </Link>
           </div>
-          <div className="mt-8 flex flex-wrap gap-2">
-            <span className="badge">Operações próprias</span>
-            <span className="badge">Fee fixo</span>
-            <span className="badge">Consultor dedicado</span>
-          </div>
         </div>
         <div className="hidden min-w-0 justify-self-center lg:block">
           <Diagram />
