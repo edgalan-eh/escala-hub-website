@@ -62,3 +62,4 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-13 | Seção 07 — Blog na Home; até haver posts, estado "em breve" com captura de e-mail | aprovada | Eduardo |
 | 2026-09-13 | Sem eyebrows numeradas nas seções. H2 abre a seção | aprovada | Eduardo |
 | 2026-09-14 | Gestão 360 não opera estoque nem financeiro do cliente; faz marketing, ads, promoções, processos e acompanhamento. Copy do menu ajustada | aprovada | Eduardo |
+| 2026-09-14 | Logos de terceiros no site: monocromático off-white na faixa e no menu; cor oficial só em chips pequenos. Shopify: kit oficial atual (roxo), mono na prática | proposta | Consistência com DS |
