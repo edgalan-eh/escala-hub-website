@@ -79,3 +79,4 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-14 | Diagrama da hero é estático (sem rotação automática) | aprovada | Etiquetas saíam tortas; protótipo é estático |
 | 2026-09-14 | Etiquetas da hero e abas do slider em 12px mono com tracking 0.1em e mais padding; círculo central 148px | aprovada | Estavam menores que o protótipo |
 | 2026-09-14 | Diagrama da hero posicionado em porcentagem do viewBox 640x560, com aspect-ratio | correção | Antes o SVG escalava e as etiquetas ficavam em px fixos: as linhas paravam antes das etiquetas |
+| 2026-09-14 | Reset de elementos em `@layer base`; classes de componente seguem sem camada | correção | `button{padding:0}` sem camada anulava utilitárias do Tailwind v4 em todo botão |

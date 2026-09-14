@@ -46,3 +46,10 @@ Comparação com os prints do protótipo final (o zip exportado estava desatuali
 Defeitos meus, corrigidos: diagrama girava com etiquetas tortas; SVG e etiquetas escalavam em ritmos diferentes; e-mail quebrando no footer.
 
 **Nota de método:** screenshots por Chrome headless com `--virtual-time-budget` congelam transições CSS no meio e mentem em larguras estreitas. Validar layout pelo navegador real (medindo `scrollWidth` e `getBoundingClientRect`), não por screenshot headless.
+
+### Bug de CSS que mascarou as correções (2026-09-14)
+`globals.css` tinha o reset de elementos fora de camada. No Tailwind v4 o `@import "tailwindcss"` cria as camadas theme/base/components/utilities, e **regra sem camada vence regra em camada**. Resultado: `button { padding: 0 }` anulava `px-*`/`py-*` em **todo botão do site** (etiquetas do diagrama, abas do slider, setas de navegação). Os ajustes de tamanho pareciam não surtir efeito.
+
+Correção: reset de elementos dentro de `@layer base`. Classes de componente (`.btn`, `.card`, `.chip`) seguem sem camada de propósito, para continuarem vencendo as utilitárias.
+
+**Regra para o futuro:** nunca deixar reset de elemento fora de `@layer base` neste projeto. Ao mexer em tamanho, conferir `getComputedStyle(el).padding` no navegador antes de concluir que o valor foi aplicado.
