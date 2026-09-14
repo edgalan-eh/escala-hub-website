@@ -38,7 +38,7 @@ export function PainSlider() {
         </div>
 
         <div className="card mx-auto mt-14 max-w-[1000px] overflow-hidden" style={{ background: "var(--ink)" }} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-          <div className="flex items-center justify-between gap-4 overflow-x-auto px-6" style={{ borderBottom: "1px solid var(--border)" }}>
+          <div className="flex items-center justify-between gap-4 overflow-x-auto px-7" style={{ borderBottom: "1px solid var(--border)" }}>
             <div className="flex gap-1" role="tablist" aria-label="Dores">
               {slides.map((s, k) => (
                 <button
@@ -46,25 +46,25 @@ export function PainSlider() {
                   role="tab"
                   aria-selected={k === i}
                   onClick={() => go(k)}
-                  className="t-label-sm relative shrink-0 px-3 py-4"
-                  style={{ color: k === i ? "var(--text)" : "var(--muted)" }}
+                  className="relative shrink-0 px-4 py-5"
+                  style={{ color: k === i ? "var(--text)" : "var(--muted)", font: "500 12px/1.2 var(--font-mono)", letterSpacing: "0.1em", textTransform: "uppercase" }}
                 >
                   {s[0]}
-                  <span className="absolute inset-x-3 bottom-0 h-0.5" style={{ background: k === i ? "var(--amber)" : "transparent" }} />
+                  <span className="absolute inset-x-4 bottom-0 h-0.5" style={{ background: k === i ? "var(--amber)" : "transparent" }} />
                 </button>
               ))}
             </div>
-            <span className="t-label-sm shrink-0" style={{ color: "var(--muted)" }}>
+            <span className="shrink-0" style={{ color: "var(--muted)", font: "500 12px/1.2 var(--font-mono)", letterSpacing: "0.1em" }}>
               {pad(i + 1)} / {pad(slides.length)}
             </span>
           </div>
 
-          <div className="grid gap-8 p-8 md:grid-cols-2 md:gap-12 md:p-10" style={{ opacity: fade ? 0 : 1, transition: "opacity 180ms" }}>
+          <div className="grid gap-8 p-8 md:grid-cols-2 md:gap-16 md:px-14 md:py-14" style={{ opacity: fade ? 0 : 1, transition: "opacity 180ms" }}>
             <div>
               <p className="t-label-sm" style={{ color: "var(--muted)" }}>
                 A dor
               </p>
-              <p className="mt-3 text-[24px] font-semibold leading-snug" style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}>
+              <p className="mt-4 text-[28px] font-semibold leading-snug" style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}>
                 {pain}
               </p>
             </div>
@@ -72,14 +72,14 @@ export function PainSlider() {
               <p className="t-label-sm" style={{ color: "var(--amber)" }}>
                 A virada
               </p>
-              <p className="t-body mt-3">{turn}</p>
+              <p className="t-body mt-4">{turn}</p>
             </div>
           </div>
 
-          <div className="flex items-center justify-between px-6 py-4" style={{ borderTop: "1px solid var(--border)" }}>
-            <div className="flex gap-1.5" aria-hidden="true">
+          <div className="flex items-center justify-between px-7 py-5" style={{ borderTop: "1px solid var(--border)" }}>
+            <div className="flex items-center gap-2.5" aria-hidden="true">
               {slides.map((s, k) => (
-                <span key={s[0]} className="h-1.5 rounded-full" style={{ width: k === i ? 24 : 8, background: k === i ? "var(--amber)" : "var(--border)", transition: "width 200ms, background 200ms" }} />
+                <span key={s[0]} className="h-1.5 rounded-full" style={{ width: k === i ? 28 : 7, height: k === i ? 7 : 7, background: k === i ? "var(--amber)" : "var(--border-strong)", transition: "width 200ms, background 200ms" }} />
               ))}
             </div>
             <div className="flex gap-2">

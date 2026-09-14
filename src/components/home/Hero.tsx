@@ -20,6 +20,9 @@ function useReducedMotion() {
 
 const CX = 320;
 const CY = 280;
+const VW = 640;
+const VH = 560;
+const pct = (v: number, total: number) => `${(v / total) * 100}%`;
 
 function Diagram() {
   const [hover, setHover] = useState<number | null>(null);
@@ -47,7 +50,7 @@ function Diagram() {
   return (
     <div
       className="relative mx-auto"
-      style={{ width: 640, height: 560, maxWidth: "100%" }}
+      style={{ width: "100%", maxWidth: VW, minWidth: 0, flex: "1 1 auto", aspectRatio: `${VW} / ${VH}` }}
       onMouseLeave={() => setHover(null)}
     >
       <div className="absolute inset-0">
@@ -89,20 +92,23 @@ function Diagram() {
                 window.setTimeout(() => setHover(null), 1500);
               }}
               aria-label={n.label}
-              className="t-label-sm absolute inline-flex items-center gap-2 whitespace-nowrap rounded px-3 py-2"
+              className="absolute inline-flex items-center gap-2.5 whitespace-nowrap rounded-md px-3.5 py-2.5"
               style={{
-                left: n.x,
-                top: n.y,
+                left: pct(n.x, VW),
+                top: pct(n.y, VH),
+                font: "500 12px/1.2 var(--font-mono)",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
                 transform: `translate(-50%,-50%) scale(${on && !reduced ? 1.15 : 1})`,
                 background: on ? "var(--amber)" : "var(--ink)",
                 color: on ? "var(--ink)" : "var(--text)",
                 border: `1px solid ${on ? "var(--amber)" : "var(--border)"}`,
-                boxShadow: on ? "0 0 24px rgba(255,177,27,.3)" : "none",
+                boxShadow: on ? "0 0 28px rgba(255,177,27,.35)" : "none",
                 opacity: dim && !on ? 0.55 : 1,
                 transition: "transform .2s ease-out, background-color .25s, color .25s, border-color .25s, box-shadow .25s, opacity .25s",
               }}
             >
-              <Icon name={n.icon} size={14} style={{ color: on ? "var(--ink)" : "var(--muted)" }} />
+              <Icon name={n.icon} size={16} style={{ color: on ? "var(--ink)" : "var(--muted)" }} />
               {n.label}
             </button>
           );
@@ -111,18 +117,18 @@ function Diagram() {
       <div
         className="absolute flex items-center justify-center rounded-full"
         style={{
-          left: CX,
-          top: CY,
-          width: 120,
-          height: 120,
+          left: pct(CX, VW),
+          top: pct(CY, VH),
+          width: 148,
+          height: 148,
           transform: "translate(-50%,-50%)",
           background: "var(--ink)",
           border: `1px solid ${hi !== null ? "var(--amber)" : "var(--navy-light)"}`,
-          boxShadow: hi !== null ? "0 0 48px rgba(255,177,27,.35)" : "0 0 24px rgba(47,85,212,.35)",
+          boxShadow: hi !== null ? "0 0 64px rgba(255,177,27,.4)" : "0 0 44px rgba(47,85,212,.55)",
           transition: "border-color .25s, box-shadow .3s",
         }}
       >
-        <Image src="/brand/escala/symbol-escalahub-dark.svg" alt="" width={56} height={56} style={{ transform: hi !== null ? "scale(1.06)" : "scale(1)", transition: "transform .3s var(--ease)" }} />
+        <Image src="/brand/escala/symbol-escalahub-dark.svg" alt="" width={70} height={70} style={{ transform: hi !== null ? "scale(1.06)" : "scale(1)", transition: "transform .3s var(--ease)" }} />
       </div>
     </div>
   );
@@ -162,13 +168,11 @@ export function Hero() {
             </Link>
           </div>
         </div>
-        <div className="hidden min-w-0 justify-self-center lg:block">
+        <div className="hidden w-full min-w-0 lg:flex lg:justify-center">
           <Diagram />
         </div>
-        <div className="flex w-full min-w-0 justify-center overflow-hidden lg:hidden" style={{ height: 340 }}>
-          <div style={{ transform: "scale(.55)", transformOrigin: "top center", width: 640, flex: "0 0 640px" }}>
-            <Diagram />
-          </div>
+        <div className="w-full min-w-0 lg:hidden">
+          <Diagram />
         </div>
       </div>
     </section>
