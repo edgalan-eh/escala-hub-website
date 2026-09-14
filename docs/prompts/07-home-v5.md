@@ -1,7 +1,7 @@
 # Home v5 — sem nomes de empresas, ecossistema na hero, dor/virada, animações reais
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição do artboard Home (após v4)
 - Revisão: 2026-09-13 — item E (seção Metri Hub) adicionado; slider consolidado em 8 dores
 

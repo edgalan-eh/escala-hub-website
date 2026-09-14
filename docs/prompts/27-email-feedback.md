@@ -1,7 +1,7 @@
 # Captura de e-mail — validação e feedback na UI
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: edição de todos os formulários de e-mail (Blog "Avisar quando sair", Cursos, lista de espera do Metri Hub) na Home e no Em breve
 
 ```

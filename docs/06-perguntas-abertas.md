@@ -25,4 +25,4 @@
 - **Q31** YouTube: tem canal? URL. Senão tiro o ícone.
 - **Q32** Usuário/org do GitHub para o repo (após `gh auth login`).
 - **Q33** Endereço comercial (cidade/UF basta) para Privacidade e Termos.
-- **Q34** GLN Studio: URL do site para o link externo.
+- **Q34** GLN Studio: URL do site (ainda não existe; link fica `#` até ter).

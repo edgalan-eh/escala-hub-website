@@ -1,7 +1,7 @@
 # DS — registrar logos mono do Mercado Livre
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: mensagem no design system do Claude Design, com os 2 arquivos anexados (mercado-livre-mono-dark.svg, mercado-livre-mark-mono-dark.svg)
 
 ```

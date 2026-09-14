@@ -1,7 +1,7 @@
 # Home · "O que operamos na prática" — marks viram chips uniformes
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: edição dos 3 tiles (corrige o resultado do 23)
 
 ```

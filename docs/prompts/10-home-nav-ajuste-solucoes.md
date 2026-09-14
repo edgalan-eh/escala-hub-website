@@ -1,7 +1,7 @@
 # Home · Nav — ajuste no menu Soluções
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição do mega menu Soluções (após 09)
 
 ```

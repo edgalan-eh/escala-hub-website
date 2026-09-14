@@ -1,7 +1,7 @@
 # DS — marks de loja própria e operação
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: mensagem no DS, com anexos: shopify-mark.svg, woocommerce-white.svg, nuvemshop-mark.png, tray-mark.svg, metrihub-mark.svg, olist-white.svg, bling.svg
 
 ```

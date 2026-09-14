@@ -1,7 +1,7 @@
 # Footer — recolocar ícone do YouTube
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição do footer (Home e Em breve). Corrige o item 3 do prompt 13.
 
 ```

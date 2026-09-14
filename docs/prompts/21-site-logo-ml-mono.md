@@ -1,7 +1,7 @@
 # Home + Em breve — aplicar logos mono do Mercado Livre
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: edição da Home e do artboard Em breve, depois do 20. Substitui o 19.
 
 ```

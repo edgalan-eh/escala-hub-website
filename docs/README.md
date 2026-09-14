@@ -20,11 +20,13 @@ Documentação viva do negócio e do produto. Atualizada a cada decisão relevan
 | [legal/](legal/) | Drafts de Política de Privacidade e Termos de Uso (LGPD) |
 | [12-logo.md](12-logo.md) | Grill do logo atual e redesenho do símbolo |
 | [13-blog-ideias.md](13-blog-ideias.md) | Ideias de posts por dor e canal, com keyword e formato |
+| [14-plano-dev.md](14-plano-dev.md) | Ordem da fase de código (fase 0) e dependências |
 
 ## Fases
 
 1. **Kickoff** (2026-09-10) — briefing, grill, arquitetura, stack. ✅
-2. **Conteúdo** (2026-09-10) — copy Home + LP ML, design system, imagens. ← aguardando aprovação
-3. **Protótipo** — Claude Design (Home + LP ML primeiro, depois Resultados, Materiais, Sobre, Consultoria geral).
-4. **Código** — repo Git, Next.js + Payload + Supabase, deploy na Vercel.
-5. **Lançamento** — domínio, analytics, SEO básico, LGPD.
+2. **Conteúdo** (2026-09-10 a 13) — posicionamento v3, copy Home, design system, logo v4. ✅
+3. **Protótipo** (2026-09-13 a 14) — Home + Em breve no Claude Design, 27 prompts. ✅ ← aguardando export HTML
+4. **Auditoria + Código** — auditoria do HTML exportado; Next.js + Payload + Supabase; deploy Vercel. ← próxima
+5. **Lançamento fase 0** — Home + Em breve + Privacidade/Termos; DNS registro.br → Vercel; Search Console.
+6. **Fase 2** — páginas de Soluções, Canais, Ferramentas (calculadora), Blog, Sobre; Resend.

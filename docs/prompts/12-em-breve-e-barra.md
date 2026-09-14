@@ -1,7 +1,7 @@
 # "Em breve" + barra "Site em construção" + dados de contato
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: (a) novo artboard "Em breve"; (b) edição da Home (barra + footer)
 
 ```

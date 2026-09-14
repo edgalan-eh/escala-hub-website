@@ -1,7 +1,7 @@
 # Home + Em breve — botão flutuante de WhatsApp
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: edição da Home e do artboard Em breve
 
 ```

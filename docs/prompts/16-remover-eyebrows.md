@@ -1,7 +1,7 @@
 # Home + Em breve — remover eyebrows numeradas
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição da Home e do artboard Em breve
 
 ```

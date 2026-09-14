@@ -1,7 +1,7 @@
 # Footer v2 — alinhado ao menu novo
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: edição do footer na Home e no artboard Em breve
 
 ```

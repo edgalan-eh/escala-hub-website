@@ -1,7 +1,7 @@
 # Home + Em breve — logos oficiais de terceiros
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: edição da Home e do artboard Em breve. Assets anexados ao DS (brand/third-party/).
 
 ```

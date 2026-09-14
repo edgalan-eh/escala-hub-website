@@ -1,7 +1,7 @@
 # Home · "O que operamos na prática" — tiles 2 e 3
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: rodado
 - Rodar como: edição da seção "Experiência construída dentro de uma operação real", depois do 22
 
 ```

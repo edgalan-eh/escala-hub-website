@@ -1,7 +1,7 @@
 # Home · Hero — interação do diagrama de ecossistema
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição do artboard Home (só a hero)
 
 ```

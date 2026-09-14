@@ -15,21 +15,21 @@ Um arquivo por prompt, numerado na ordem em que rodou. Status: pendente / rodado
 | 09 | 09-home-nav-megamenu.md | rodado |
 | 10 | 10-home-nav-ajuste-solucoes.md | rodado |
 | 11 | 11-home-nav-gestao-loja-propria.md | superado pelo 17 |
-| 12 | 12-em-breve-e-barra.md | pendente |
+| 12 | 12-em-breve-e-barra.md | rodado |
 | 13 | 13-lgpd-popup-e-cal.md | rodado |
-| 14 | 14-footer-youtube.md | pendente |
-| 15 | 15-blog-em-breve.md | pendente |
-| 16 | 16-remover-eyebrows.md | pendente |
-| 17 | 17-nav-gestao-copy.md | pendente |
-| 18 | 18-logos-terceiros.md | pendente |
+| 14 | 14-footer-youtube.md | rodado |
+| 15 | 15-blog-em-breve.md | rodado |
+| 16 | 16-remover-eyebrows.md | rodado |
+| 17 | 17-nav-gestao-copy.md | rodado |
+| 18 | 18-logos-terceiros.md | rodado |
 | 19 | 19-logo-ml-mono.md | superado pelo 20+21 |
-| 20 | 20-ds-logo-ml-mono.md | pendente |
-| 21 | 21-site-logo-ml-mono.md | pendente |
-| 22 | 22-ds-marks-loja-operacao.md | pendente |
+| 20 | 20-ds-logo-ml-mono.md | rodado |
+| 21 | 21-site-logo-ml-mono.md | rodado |
+| 22 | 22-ds-marks-loja-operacao.md | rodado |
 | 23 | 23-tiles-operamos.md | rodado |
-| 24 | 24-tiles-chips.md | pendente |
+| 24 | 24-tiles-chips.md | rodado |
 | 25 | 25-whatsapp-flutuante.md | rodado |
-| 26 | 26-footer-v2.md | pendente |
-| 27 | 27-email-feedback.md | pendente |
+| 26 | 26-footer-v2.md | rodado |
+| 27 | 27-email-feedback.md | rodado |
 
 Regra: novo prompt = novo arquivo. **Prompt já rodado nunca é editado**; correção vira prompt novo. Ao rodar, marcar status e anexar PNG exportado em `../prototipo/NN-nome.png`.

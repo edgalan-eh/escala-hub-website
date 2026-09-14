@@ -1,7 +1,7 @@
 # Home · Nav — mega menu
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição do artboard Home (só a nav). Referência visual: dropdown "Consultoria" do ecommercepuro.com.br
 
 ```

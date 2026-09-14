@@ -1,7 +1,7 @@
 # Home · Seção Blog — estado "em breve"
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: rodado
 - Rodar como: edição da seção 07 — BLOG da Home
 
 ```
