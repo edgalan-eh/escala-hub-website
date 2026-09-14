@@ -10,10 +10,12 @@ Uso: faixa "Operamos e estruturamos em" (monocromático off-white, opacidade 60�
 | TikTok Shop | tiktok-mono.svg (ícone) | Simple Icons | ícone + "TikTok Shop" em Sora; wordmark oficial não é distribuído |
 | Shopify | shopify-logo-dark.svg (verde, fundo escuro), shopify-logo-light.svg, shopify-mark.svg (sacola), shopify-white.svg (mono) | brand kit oficial | ok |
 | WooCommerce | woocommerce.svg (cor), woocommerce-white.svg | brand kit oficial | ok |
-| Nuvemshop | nuvemshop.png (538×128, fundo removido) | site oficial | **pendente SVG**; site não expõe vetor. Pedir ao parceiro ou vetorizar |
-| Tray | tray.svg | header do site oficial (wordmark + carrinho) | ok |
+| Nuvemshop | nuvemshop.png (538×128, fundo removido), nuvemshop-mark.png (símbolo) | site oficial | **pendente SVG**; site não expõe vetor. Pedir ao parceiro ou vetorizar |
+| Tray | tray.svg, tray-mark.svg (carrinho) | header do site oficial (wordmark + carrinho) | ok |
 | Bling | bling.svg | site oficial | ok |
 | Olist | olist.svg, olist-white.svg | brand kit oficial (imprensa) | ok |
 | Metri Hub | metrihub-logo-primary(-dark).svg, metrihub-mark.svg | repo marketplace-os | ok |
 
 `preview.png`: prancha monocromática (faixa). `preview-color.png`: cores oficiais (uso em cards/menu se decidirmos).
+
+`preview-marks.png`: linhas de marks dos 3 tiles de "O que operamos na prática".
