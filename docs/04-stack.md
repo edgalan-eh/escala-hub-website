@@ -1,6 +1,18 @@
 # 04 — Stack técnica
 
-Atualizado em 2026-09-10 com decisão de CMS.
+Atualizado em 2026-09-14. **Fase 0 = custo zero:** Vercel Hobby, sem banco, sem CMS. O restante abaixo é a stack alvo da fase 2.
+
+## Fase 0 (lançamento)
+| Camada | Escolha | Custo |
+|---|---|---|
+| Framework | Next.js App Router + TS + Tailwind | 0 |
+| Hospedagem | Vercel Hobby | 0 |
+| Formulários de e-mail | Route Handler → webhook do Google Apps Script → planilha "Leads Escala Hub" | 0 |
+| Agenda | Cal.com embed | 0 |
+| Analytics | Vercel Analytics (Hobby) | 0 |
+| Domínio | registro.br → DNS Vercel | já pago |
+
+## Fase 2 (stack alvo)
 
 | Camada | Escolha | Por quê |
 |---|---|---|
