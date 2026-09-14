@@ -66,6 +66,7 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-14 | Captura de e-mail: fase 1 só valida formato e armazena; sem envio. Protótipo: localStorage. Código: tabela `newsletter_subscribers` no Postgres (Vercel não permite gravar arquivo). Resend entra depois | aprovada | Eduardo pediu "validar e armazenar em arquivo"; arquivo não funciona na Vercel |
 | 2026-09-14 | Hospedagem: Vercel **Hobby** (custo zero), conta eduardo@escalahub.com.br. Eduardo ciente de que o Hobby é para uso não comercial nos termos da Vercel; migrar para Pro quando fizer sentido | aprovada | Eduardo: sem custo agora |
 | 2026-09-14 | Sem GA4/Meta Pixel no lançamento; só Vercel Analytics. Pixels entram quando houver tráfego pago | aprovada | Eduardo |
-| 2026-09-14 | **Sem banco na fase 0.** Banco entra na fase 2 (posts, ferramentas). Captura de e-mail vai para Google Sheets via Apps Script (webhook gratuito) | aprovada (Sheets é proposta) | Eduardo: custo zero, banco só quando tiver conteúdo |
+| 2026-09-14 | **Sem banco na fase 0.** Banco entra na fase 2 (posts, ferramentas). Formulários de e-mail escondidos na fase 0 (só o do blog existia). Sheets/Resend na fase 2 | aprovada | Eduardo: custo zero, banco só quando tiver conteúdo |
 | 2026-09-14 | Páginas internas (Soluções, Canais, etc.) ficam para a próxima fase; lançamento = Home + Em breve + legais | aprovada | Eduardo |
 | 2026-09-14 | Prompts 01–27 rodados. Protótipo vai para auditoria e depois código | marco | Eduardo |
+| 2026-09-14 | Modal do diagnóstico usa embed real do Cal.com (iframe no protótipo, @calcom/embed-react no código) | aprovada | Eduardo |

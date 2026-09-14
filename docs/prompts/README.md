@@ -31,5 +31,6 @@ Um arquivo por prompt, numerado na ordem em que rodou. Status: pendente / rodado
 | 25 | 25-whatsapp-flutuante.md | rodado |
 | 26 | 26-footer-v2.md | rodado |
 | 27 | 27-email-feedback.md | rodado |
+| 28 | 28-cal-embed-e-blog-sem-form.md | pendente |
 
 Regra: novo prompt = novo arquivo. **Prompt já rodado nunca é editado**; correção vira prompt novo. Ao rodar, marcar status e anexar PNG exportado em `../prototipo/NN-nome.png`.

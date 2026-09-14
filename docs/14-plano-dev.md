@@ -7,7 +7,7 @@ Criado em 2026-09-14. Entrada: HTML exportado do Claude Design (Home + Em breve)
 2. **Scaffold** — `create-next-app` (App Router, TS, Tailwind) em `apps/web` ou raiz; shadcn/ui; fontes Sora/Inter/JetBrains Mono via `next/font`.
 3. **Portar a Home** — componentes por seção; animações com `motion`; logos em `public/brand`.
 4. **Em breve, Privacidade, Termos** — rotas; todos os links internos → `/em-breve`.
-5. **Formulários** — Route Handler `POST /api/subscribe` → valida → envia para webhook do Google Apps Script (planilha). Sem banco, sem e-mail.
+5. **Formulários** — nenhum na fase 0.
 6. **Cal.com** — modal com embed oficial (`@calcom/embed-react`).
 7. **SEO** — title/description da 01, OG image, sitemap.xml, robots, canonical.
 8. **Vercel Hobby** — projeto ligado ao repo `edgalan-eh/escala-hub-website`, preview por PR, Vercel Analytics.
@@ -15,7 +15,6 @@ Criado em 2026-09-14. Entrada: HTML exportado do Claude Design (Home + Em breve)
 
 ## Dependências do Eduardo
 - Export HTML do protótipo.
-- Planilha Google "Leads Escala Hub" + Apps Script publicado como Web App (eu passo o script; você publica em 2 min na sua conta).
 - Quando for lançar: trocar DNS no registro.br (eu passo os registros).
 
 ## Fora da fase 0
