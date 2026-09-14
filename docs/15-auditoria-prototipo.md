@@ -34,3 +34,15 @@ Aprovado para portar. Layout, copy e tokens batem com os docs. Itens abaixo são
 
 ## Mapa de componentes (porte)
 Nav (mega menu) · HeroDiagram · LogoMarquee · OrigemTiles · PainSlider · Pillars · Method · ContentCards · BlogSoon · MetriHubSection (mock + marquee de alertas) · Partners · FinalCTA · Footer · CookieConsent · CalModal · WhatsAppFab · BuildBar.
+
+## Correções pós-lançamento (2026-09-14)
+Comparação com os prints do protótipo final (o zip exportado estava desatualizado):
+1. Barra do topo: fundo ink com ponto âmbar, texto curto, sem botão fechar.
+2. Hero: badges abaixo dos CTAs removidos.
+3. Footer: badges da coluna da marca removidos; "Contato" no lugar de "Calculadora de Preços"; ícones de WhatsApp e e-mail; "Feito em São Paulo" removido; grade de 5 colunas para o e-mail caber em uma linha.
+4. Marquee: logos maiores (30–42px) e opacidade 75%.
+5. Hero e slider: etiquetas 12px mono, mais padding e respiro.
+
+Defeitos meus, corrigidos: diagrama girava com etiquetas tortas; SVG e etiquetas escalavam em ritmos diferentes; e-mail quebrando no footer.
+
+**Nota de método:** screenshots por Chrome headless com `--virtual-time-budget` congelam transições CSS no meio e mentem em larguras estreitas. Validar layout pelo navegador real (medindo `scrollWidth` e `getBoundingClientRect`), não por screenshot headless.

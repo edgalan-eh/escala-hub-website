@@ -77,3 +77,5 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-14 | Barra do topo: fundo ink com ponto âmbar e "Site em construção", sem botão fechar | aprovada | Protótipo |
 | 2026-09-14 | Sem badges no hero nem na coluna da marca do footer; "Contato" no lugar de "Calculadora" na coluna Empresa; sem "Feito em São Paulo" | aprovada | Protótipo |
 | 2026-09-14 | Diagrama da hero é estático (sem rotação automática) | aprovada | Etiquetas saíam tortas; protótipo é estático |
+| 2026-09-14 | Etiquetas da hero e abas do slider em 12px mono com tracking 0.1em e mais padding; círculo central 148px | aprovada | Estavam menores que o protótipo |
+| 2026-09-14 | Diagrama da hero posicionado em porcentagem do viewBox 640x560, com aspect-ratio | correção | Antes o SVG escalava e as etiquetas ficavam em px fixos: as linhas paravam antes das etiquetas |
