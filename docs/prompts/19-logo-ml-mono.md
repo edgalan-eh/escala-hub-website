@@ -1,7 +1,7 @@
 # Logo Mercado Livre — versão mono correta
 
 - Data: 2026-09-14
-- Status: pendente
+- Status: superado pelo 20 + 21 (não rodar)
 - Rodar como: edição da Home e Em breve. Corrige o item 1/2/3 do prompt 18 para o ML. Anexar ao DS: mercado-livre-mono-dark.svg e mercado-livre-mark-mono-dark.svg.
 
 ```

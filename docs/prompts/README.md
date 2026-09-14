@@ -22,6 +22,8 @@ Um arquivo por prompt, numerado na ordem em que rodou. Status: pendente / rodado
 | 16 | 16-remover-eyebrows.md | pendente |
 | 17 | 17-nav-gestao-copy.md | pendente |
 | 18 | 18-logos-terceiros.md | pendente |
-| 19 | 19-logo-ml-mono.md | pendente |
+| 19 | 19-logo-ml-mono.md | superado pelo 20+21 |
+| 20 | 20-ds-logo-ml-mono.md | pendente |
+| 21 | 21-site-logo-ml-mono.md | pendente |
 
 Regra: novo prompt = novo arquivo. **Prompt já rodado nunca é editado**; correção vira prompt novo. Ao rodar, marcar status e anexar PNG exportado em `../prototipo/NN-nome.png`.
