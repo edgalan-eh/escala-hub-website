@@ -70,3 +70,6 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-14 | Páginas internas (Soluções, Canais, etc.) ficam para a próxima fase; lançamento = Home + Em breve + legais | aprovada | Eduardo |
 | 2026-09-14 | Prompts 01–27 rodados. Protótipo vai para auditoria e depois código | marco | Eduardo |
 | 2026-09-14 | Modal do diagnóstico usa embed real do Cal.com (iframe no protótipo, @calcom/embed-react no código) | aprovada | Eduardo |
+| 2026-09-14 | App Next.js vive na raiz do repo (não em `web/`), para a integração Git da Vercel não precisar de root directory | aprovada | Simplicidade |
+| 2026-09-14 | Deploy de produção na Vercel: projeto `escala-hub-website`, Git conectado (push em `main` = deploy) | marco | https://escala-hub-website-myabf3c3n-edgalan-ehs-projects.vercel.app |
+| 2026-09-14 | Programa de parceiros com "20%" e "48h" publicado como veio do protótipo; confirmar números | pendente Eduardo | Auditoria item 7 |

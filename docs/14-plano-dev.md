@@ -19,3 +19,11 @@ Criado em 2026-09-14. Entrada: HTML exportado do Claude Design (Home + Em breve)
 
 ## Fora da fase 0
 Páginas internas, calculadora, blog real, Resend, pixels, Payload.
+
+## Status (2026-09-14)
+Itens 1–8 feitos. Produção no ar na URL da Vercel. Faltam: domínio (DNS), Search Console, revisão do Eduardo.
+
+## Trocar o domínio (quando o Eduardo autorizar)
+1. Vercel: `vercel domains add escalahub.com.br` (ou painel → Domains).
+2. registro.br → DNS: apagar registros do Framer; criar `A @ 76.76.21.21` e `CNAME www cname.vercel-dns.com`.
+3. Propagação 1–24h. Depois: Search Console → adicionar propriedade, enviar sitemap `https://escalahub.com.br/sitemap.xml`, pedir reindexação da Home.

@@ -27,6 +27,6 @@ Documentação viva do negócio e do produto. Atualizada a cada decisão relevan
 1. **Kickoff** (2026-09-10) — briefing, grill, arquitetura, stack. ✅
 2. **Conteúdo** (2026-09-10 a 13) — posicionamento v3, copy Home, design system, logo v4. ✅
 3. **Protótipo** (2026-09-13 a 14) — Home + Em breve no Claude Design, 27 prompts. ✅ ← aguardando export HTML
-4. **Auditoria + Código** — auditoria do HTML exportado; Next.js + Payload + Supabase; deploy Vercel. ← próxima
-5. **Lançamento fase 0** — Home + Em breve + Privacidade/Termos; DNS registro.br → Vercel; Search Console.
+4. **Auditoria + Código** (2026-09-14) — auditoria em 15; Next.js na raiz do repo; deploy Vercel Hobby. ✅
+5. **Lançamento fase 0** — DNS registro.br → Vercel; Search Console. ← próxima
 6. **Fase 2** — páginas de Soluções, Canais, Ferramentas (calculadora), Blog, Sobre; Resend.

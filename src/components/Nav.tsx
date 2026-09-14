@@ -167,7 +167,7 @@ export function Nav() {
       )}
 
       {mobile && (
-        <div className="fixed inset-0 z-[75] flex flex-col lg:hidden" style={{ background: "var(--ink)" }}>
+        <div className="fixed inset-0 z-[88] flex flex-col lg:hidden" style={{ background: "var(--ink)" }}>
           <div className="container flex h-[72px] items-center justify-between" style={{ borderBottom: "1px solid var(--border)" }}>
             <Image src="/brand/escala/logo-escalahub-dark.svg" alt="Escala Hub" width={150} height={27} style={{ height: 26, width: "auto" }} />
             <button aria-label="Fechar menu" onClick={() => setMobile(false)} className="flex h-10 w-10 items-center justify-center rounded-lg border" style={{ borderColor: "var(--border)" }}>
@@ -179,7 +179,7 @@ export function Nav() {
               <div key={item.label} style={{ borderBottom: "1px solid var(--border)" }}>
                 {item.key ? (
                   <>
-                    <button onClick={() => setMobileKey(mobileKey === item.key ? null : item.key!)} className="flex w-full items-center justify-between py-4 text-[17px] font-medium" aria-expanded={mobileKey === item.key}>
+                    <button onClick={() => setMobileKey(mobileKey === item.key ? null : item.key!)} className="flex w-full items-center justify-between py-5 text-[17px] font-medium" aria-expanded={mobileKey === item.key}>
                       {item.label}
                       <ChevronDown size={18} style={{ transform: mobileKey === item.key ? "rotate(180deg)" : "none", transition: "transform 180ms", color: "var(--muted)" }} />
                     </button>
@@ -192,7 +192,7 @@ export function Nav() {
                     )}
                   </>
                 ) : (
-                  <Link href={item.href} onClick={() => setMobile(false)} className="block py-4 text-[17px] font-medium">
+                  <Link href={item.href} onClick={() => setMobile(false)} className="block py-5 text-[17px] font-medium">
                     {item.label}
                   </Link>
                 )}
