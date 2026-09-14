@@ -64,7 +64,7 @@ Calculadora de margem por marketplace · `{artigo mais relevante}` · Diagnósti
 **Texto:** Conte o momento do seu e-commerce. Em uma conversa inicial, identificamos onde a Escala Hub pode gerar mais impacto.
 **CTA:** Solicitar diagnóstico
 
-## Footer
-Logo + "Estruturamos e aceleramos operações de e-commerce."
-SOLUÇÕES (Marketplaces, E-commerce próprio, Operação e gestão, Tecnologia e integrações) · EMPRESA (Cases, Sobre, Conteúdo) · PRODUTOS (Metri Hub, GLN Studio) · CONTATO (WhatsApp, e-mail, Instagram, LinkedIn, YouTube)
-© 2026 Escala Hub · CNPJ · Privacidade · Termos
+## Footer (v2, 2026-09-14)
+Marca: logo + "Estruturamos e aceleramos operações de e-commerce." + chips OPERAÇÕES PRÓPRIAS · FEE FIXO · CONSULTOR DEDICADO + redes.
+SOLUÇÕES (Mentoria para Marketplaces, Criação de E-commerce, Gestão de E-commerce, Construção de Marca) · CANAIS (Mercado Livre, Shopee, Amazon, TikTok Shop, Loja própria) · FERRAMENTAS (Metri Hub ↗, Calculadora de Preços) · EMPRESA (Sobre, Blog, Contato, GLN Studio ↗) · CONTATO (WhatsApp, e-mail, São Paulo, SP, botão Solicitar diagnóstico)
+© 2026 Escala Hub Consultoria e Negócios Ltda. · CNPJ 54.988.708/0001-21 · Privacidade · Termos · Feito em São Paulo
