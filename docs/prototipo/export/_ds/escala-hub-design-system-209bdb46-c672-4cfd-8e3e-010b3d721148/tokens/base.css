@@ -1,0 +1,6 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--bg-page);color:var(--text-body);font:var(--fw-body) var(--fs-body)/var(--lh-body) var(--font-body)}
+a{color:var(--text-body);text-decoration:none;text-underline-offset:3px}a:hover{color:var(--amber)}
+::selection{background:var(--amber);color:var(--ink)}
+.paper{background:var(--paper);color:var(--ink-on-paper)}.paper a{color:var(--ink-on-paper)}.paper a:hover{color:var(--navy-light)}

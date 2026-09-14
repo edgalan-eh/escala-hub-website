@@ -1,0 +1,18 @@
+:root{
+/* base */
+--ink:#0A0A0B;--surface:#141416;--surface-2:#1C1C1F;--border:#2A2A2E;--border-strong:#3A3A40;
+--text:#F4F2EE;--muted:#9C9A94;--dim:#5C5B57;
+--amber:#FFB11B;--amber-deep:#F27A1A;--amber-soft:rgba(255,177,27,.12);
+--navy:#0F1B33;--navy-light:#2F55D4;--navy-soft:#16244A;
+--paper:#F4F2EE;--paper-2:#E9E6E0;--ink-on-paper:#0A0A0B;--muted-on-paper:#5C5B57;--border-on-paper:#D6D2CA;
+--up:#3DDC97;--down:#F25F5C;
+/* marketplaces */
+--mp-ml:#FFE600;--mp-ml-ink:#2D3277;--mp-shopee:#EE4D2D;--mp-amazon:#146EB4;--mp-tiktok:#000000;--mp-tiktok-fg:#FFFFFF;
+/* semantic */
+--bg-page:var(--ink);--bg-section-alt:var(--surface);--bg-card:var(--surface);--bg-input:var(--surface-2);--bg-hover:var(--surface-2);--bg-software:var(--navy);--bg-paper:var(--paper);
+--text-body:var(--text);--text-secondary:var(--muted);--text-accent:var(--amber);--text-positive:var(--up);
+--border-default:var(--border);--border-focus:var(--amber);
+--cta-bg:var(--amber);--cta-bg-hover:var(--amber-deep);--cta-fg:var(--ink);
+--nav-bg:rgba(10,10,11,.9);
+--overlay:rgba(10,10,11,.72);
+}

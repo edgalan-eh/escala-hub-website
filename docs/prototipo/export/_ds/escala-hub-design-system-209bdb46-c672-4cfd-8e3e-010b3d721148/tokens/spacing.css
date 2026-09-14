@@ -1,0 +1,10 @@
+:root{
+--sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;--sp-9:96px;--sp-10:120px;
+--section-y:120px;--section-y-m:72px;--container:1200px;--container-narrow:760px;--gutter:24px;--grid-gap:24px;
+--radius-sm:6px;--radius:8px;--radius-lg:12px;--radius-xl:16px;--radius-pill:999px;
+--border-w:1px;/* @kind other */
+--shadow-none:none;--shadow-card:0 1px 0 rgba(255,255,255,.03) inset;--shadow-pop:0 12px 32px rgba(0,0,0,.45);
+--blur-nav:12px;/* @kind other */
+--ease:cubic-bezier(.2,.8,.2,1);/* @kind other */--dur-fast:120ms;/* @kind other */--dur:200ms;/* @kind other */--dur-slow:400ms;/* @kind other */
+--nav-h:64px;/* @kind other */
+}

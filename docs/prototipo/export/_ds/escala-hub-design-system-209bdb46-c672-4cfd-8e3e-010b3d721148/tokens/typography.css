@@ -1,0 +1,15 @@
+:root{
+--font-display:"Sora",system-ui,sans-serif;--font-body:"Inter",system-ui,sans-serif;--font-mono:"JetBrains Mono",ui-monospace,monospace;
+--fs-h1:64px;--lh-h1:1.05;/* @kind other */--fs-h2:44px;--lh-h2:1.1;/* @kind other */--fs-h3:28px;--lh-h3:1.2;/* @kind other */--fs-stat:56px;--lh-stat:1;/* @kind other */
+--fs-body:18px;--lh-body:1.6;/* @kind other */--fs-small:15px;--lh-small:1.5;/* @kind other */--fs-label:12px;--lh-label:1.2;/* @kind other */
+--fs-h1-m:40px;--fs-h2-m:32px;--fs-h3-m:22px;--fs-stat-m:40px;--fs-body-m:16px;
+--fw-display:700;/* @kind other */--fw-display-md:600;/* @kind other */--fw-body:400;/* @kind other */--fw-body-md:500;/* @kind other */--fw-mono:500;/* @kind other */
+--ls-display:-0.02em;/* @kind other */--ls-label:0.08em;/* @kind other */--tt-label:uppercase;/* @kind other */
+}
+.t-h1{font:var(--fw-display) var(--fs-h1)/var(--lh-h1) var(--font-display);letter-spacing:var(--ls-display)}
+.t-h2{font:var(--fw-display) var(--fs-h2)/var(--lh-h2) var(--font-display);letter-spacing:var(--ls-display)}
+.t-h3{font:var(--fw-display-md) var(--fs-h3)/var(--lh-h3) var(--font-display);letter-spacing:var(--ls-display)}
+.t-stat{font:var(--fw-display) var(--fs-stat)/var(--lh-stat) var(--font-display);letter-spacing:var(--ls-display);font-variant-numeric:tabular-nums}
+.t-body{font:var(--fw-body) var(--fs-body)/var(--lh-body) var(--font-body)}
+.t-small{font:var(--fw-body) var(--fs-small)/var(--lh-small) var(--font-body)}
+.t-label{font:var(--fw-mono) var(--fs-label)/var(--lh-label) var(--font-mono);letter-spacing:var(--ls-label);text-transform:var(--tt-label)}

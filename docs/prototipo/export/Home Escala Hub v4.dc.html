@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/escala-hub-design-system-209bdb46-c672-4cfd-8e3e-010b3d721148/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/escala-hub-design-system-209bdb46-c672-4cfd-8e3e-010b3d721148/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/escala-hub-design-system-209bdb46-c672-4cfd-8e3e-010b3d721148/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/escala-hub-design-system-209bdb46-c672-4cfd-8e3e-010b3d721148/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/escala-hub-design-system-209bdb46-c672-4cfd-8e3e-010b3d721148/tokens/base.css">
+  <link rel="stylesheet" href="_ds/escala-hub-design-system-209bdb46-c672-4cfd-8e3e-010b3d721148/styles.css">
+  <script src="_ds/escala-hub-design-system-209bdb46-c672-4cfd-8e3e-010b3d721148/_ds_bundle.js"></script>
+  <style>
+    body{margin:0;background:#0A0A0B;color:#F4F2EE}
+    a{color:#F4F2EE;text-decoration:none}a:hover{color:#FFB11B}
+    .paper a{color:#0A0A0B}.paper a:hover{color:#F27A1A}
+    @keyframes eh-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @keyframes eh-draw{to{stroke-dashoffset:0}}
+    @keyframes eh-pulse{0%{box-shadow:0 0 0 0 rgba(255,177,27,.45)}70%{box-shadow:0 0 0 12px rgba(255,177,27,0)}100%{box-shadow:0 0 0 0 rgba(255,177,27,0)}}
+    @keyframes eh-glow{0%,100%{opacity:.6}50%{opacity:1}}
+    @keyframes eh-menu-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes eh-cookie-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes eh-spin{to{transform:rotate(360deg)}}
+    @keyframes eh-fade-in{from{opacity:0}to{opacity:1}}
+    @keyframes eh-wa-ring{0%{transform:scale(1);opacity:1}70%{opacity:.25}100%{transform:scale(1.357);opacity:0}}
+    .eh-wa::after{content:'';position:absolute;inset:0;border-radius:999px;border:2px solid rgba(37,211,102,.4);pointer-events:none;animation:eh-wa-ring 3s cubic-bezier(.2,.8,.2,1) 3 both}
+    @media (max-width:640px){.eh-wa{right:16px!important;bottom:16px!important;width:52px!important;height:52px!important}.eh-wa-btn,.eh-wa-btn:hover{width:52px!important;height:52px!important;border-radius:26px!important}.eh-wa-ico{width:52px!important;flex:0 0 52px!important}.eh-wa-label{display:none!important}}
+    @keyframes eh-shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+    #dc-root [style*="width:1200px"],#dc-root [style*="width: 1200px"]{width:100%!important;max-width:1200px!important;padding-inline:24px!important;box-sizing:border-box!important}
+    #dc-root [style*="width:1000px"],#dc-root [style*="width: 1000px"]{width:100%!important;max-width:1000px!important}
+    #dc-root [style*="width:800px"],#dc-root [style*="width: 800px"]{width:min(800px,calc(100vw - 32px))!important}
+    #dc-root img{max-width:100%}
+    .eh-nav-burger{display:none}
+    @media (max-width:1180px){
+      #dc-root [style*="52fr 48fr"],#dc-root [style*="52fr 48fr"]{grid-template-columns:minmax(0,1fr)!important;gap:48px!important}
+      #dc-root [style*="min-height:760px"],#dc-root [style*="min-height: 760px"]{min-height:0!important}
+      #dc-root [data-eh="hero-art"]{justify-self:center!important}
+      #dc-root [style*="5fr 6fr"],#dc-root [style*="5fr 6fr"]{grid-template-columns:minmax(0,1fr)!important;gap:40px!important}
+      #dc-root [data-eh="metri-art"]{display:none!important}
+      #dc-root [style*="minmax(0,440px) minmax(0,1fr)"],#dc-root [style*="minmax(0px, 440px) minmax(0px, 1fr)"]{grid-template-columns:minmax(0,1fr)!important;gap:40px!important}
+    }
+    @media (max-width:1024px){
+      #dc-root [style*="repeat(3,1fr)"],#dc-root [style*="repeat(3, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+      #dc-root [style*="grid-template-columns:1fr 1fr"],#dc-root [style*="grid-template-columns: 1fr 1fr"]{grid-template-columns:minmax(0,1fr)!important;gap:32px!important}
+      #dc-root [style*="320px repeat(4,1fr)"],#dc-root [style*="320px repeat(4, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:40px 32px!important}
+      #dc-root [style*="minmax(0,1fr) 300px"],#dc-root [style*="minmax(0px, 1fr) 300px"]{grid-template-columns:minmax(0,1fr)!important}
+    }
+    @media (max-width:900px){
+      .eh-nav-links,.eh-nav-cta{display:none!important}
+      .eh-nav-burger{display:inline-flex!important}
+      #dc-root [data-eh="hero-art"],#dc-root [data-eh="blog-art"]{display:none!important}
+    }
+    @media (max-width:720px){
+      #dc-root section{padding-top:72px!important;padding-bottom:72px!important}
+      #dc-root [style*="width:1200px"],#dc-root [style*="width: 1200px"]{padding-inline:16px!important}
+      #dc-root [style*="repeat(3,1fr)"],#dc-root [style*="repeat(3, 1fr)"],#dc-root [style*="320px repeat(4,1fr)"],#dc-root [style*="320px repeat(4, 1fr)"]{grid-template-columns:minmax(0,1fr)!important;gap:32px!important}
+      #dc-root [style*="repeat(5,1fr)"],#dc-root [style*="repeat(5, 1fr)"]{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+      #dc-root [style*="grid-template-columns:1fr 220px"],#dc-root [style*="grid-template-columns: 1fr 220px"]{grid-template-columns:minmax(0,1fr)!important}
+      #dc-root h1{font-size:40px!important;line-height:1.08!important}
+      #dc-root h2{font-size:30px!important;line-height:1.15!important}
+      #dc-root h3{font-size:20px!important}
+      #dc-root [style*="font:400 20px"],#dc-root [style*="font: 400 20px"]{font-size:17px!important}
+      #dc-root [style*="font:400 18px"],#dc-root [style*="font: 400 18px"]{font-size:16px!important}
+      #dc-root [style*="font:600 56px"],#dc-root [style*="font: 600 56px"],#dc-root [style*="font:600 48px"],#dc-root [style*="font: 600 48px"],#dc-root [style*="font:600 44px"],#dc-root [style*="font: 600 44px"]{font-size:30px!important;line-height:1.15!important}
+      #dc-root [style*="font:600 32px"],#dc-root [style*="font: 600 32px"]{font-size:24px!important}
+      #dc-root [style*="padding:64px"],#dc-root [style*="padding: 64px"]{padding:28px!important}
+      #dc-root [style*="z-index:200"],#dc-root [style*="z-index: 200"]{padding:12px!important}
+      #dc-root [style*="left:24px;bottom:24px;width:360px"],#dc-root [style*="left: 24px; bottom: 24px; width: 360px"]{left:12px!important;right:12px!important;width:auto!important;bottom:84px!important}
+    }
+  </style>
+</helmet>
+
+<div data-screen-label="Home v4" style="width:100%;background:#0A0A0B;color:#F4F2EE;font-family:var(--font-body);position:relative;overflow-x:clip">
+
+  <sc-if value="{{ barOpen }}" hint-placeholder-val="{{ true }}">
+    <div data-screen-label="Aviso" style="height:32px;background:#141416;color:#9C9A94;border-bottom:1px solid #2A2A2E;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 24px">
+      <span></span>
+      <span style="display:inline-flex;align-items:center;gap:8px;font:500 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;text-align:center;justify-self:center"><span style="width: 5px; height: 5px; border-radius: 50%; background: rgb(255, 177, 27);"></span>Site em construção</span>
+      <button type="button" onClick="{{ closeBar }}" aria-label="Fechar aviso" style="justify-self:end;width:24px;height:24px;border:0;background:transparent;color:#9C9A94;cursor:pointer;font:400 16px/1 var(--font-mono);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:color .15s" style-hover="color:#F4F2EE">×</button>
+    </div>
+  </sc-if>
+  <!-- NAV -->
+  <nav data-screen-label="Nav" style="position:{{ navPosition }};top:0;z-index:50;height:72px;background:rgba(10,10,11,.9);backdrop-filter:blur(12px);border-bottom:1px solid #2A2A2E">
+    <!-- Mobile (não implementado aqui): hambúrguer, painel full-screen ink, grupos em acordeão, CTA fixo no rodapé. -->
+    <div style="position:relative;width:1200px;margin:0 auto;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="#top" style="display:flex;align-items:center"><img src="assets/logo/logo-escalahub-dark.svg" alt="Escala Hub" style="height:26px;width:auto;display:block"></a>
+      <div class="eh-nav-links" onMouseLeave="{{ leaveNav }}" style="display:flex;align-items:center;gap:4px;height:72px;font:500 15px/1 var(--font-body)">
+        <sc-for list="{{ navItems }}" as="it" hint-placeholder-count="5">
+          <a href="{{ it.href }}" onMouseEnter="{{ it.enter }}" onClick="{{ it.click }}" style="display:inline-flex;align-items:center;gap:6px;padding:10px 12px;border-radius:8px;color:#F4F2EE;background:{{ it.bg }};transition:background .15s" style-hover="color:#F4F2EE;background:#1C1C1F">
+            {{ it.label }}
+            <sc-if value="{{ it.hasMenu }}" hint-placeholder-val="{{ false }}">
+              <span style="display:inline-flex;transform:rotate({{ it.rot }});transition:transform .18s cubic-bezier(.2,.8,.2,1)"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="chevron-down" size="14" color="#9C9A94" hint-size="14px,14px"></x-import></span>
+            </sc-if>
+          </a>
+        </sc-for>
+        <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+          <div onMouseEnter="{{ keepMenu }}" style="position:absolute;left:0;right:0;top:72px;padding-top:8px;display:flex;justify-content:center;z-index:60">
+            <div style="width:800px;background:#141416;border:1px solid #2A2A2E;border-radius:16px;padding:32px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;box-shadow:0 12px 32px rgba(0,0,0,.45);animation:eh-menu-in .18s cubic-bezier(.2,.8,.2,1) both">
+              <div style="display:flex;flex-direction:column;gap:2px">
+                <span style="font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94;padding:0 12px 12px">{{ menu.heading }}</span>
+                <sc-for list="{{ menu.links }}" as="l" hint-placeholder-count="0">
+                  <sc-if value="{{ l.featured }}" hint-placeholder-val="{{ false }}">
+                    <a href="{{ l.href }}" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;padding:20px;margin:0 0 6px;background:#0F1B33;border:1px solid #2F55D4;border-radius:12px;color:#F4F2EE;transition:box-shadow .16s" style-hover="box-shadow:0 0 0 4px rgba(47,85,212,.18);color:#F4F2EE">
+                      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+                        <img src="assets/metrihub/metrihub-logo-primary-dark.svg" alt="Metri Hub" style="height:22px;width:auto;display:block">
+                        <span style="padding:4px 8px;border:1px solid #2F55D4;border-radius:4px;font:500 10px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8;white-space:nowrap">Incluso para clientes</span>
+                      </div>
+                      <div style="display:flex;flex-direction:column;gap:4px">
+                        <span style="font:600 16px/1.3 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE">{{ l.title }}</span>
+                        <span style="font:400 14px/1.45 var(--font-body);color:#B7C0DC">{{ l.sub }}</span>
+                      </div>
+                    </a>
+                  </sc-if>
+                  <sc-if value="{{ l.regular }}" hint-placeholder-val="{{ true }}">
+                    <a href="{{ l.href }}" style="display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;align-items:start;padding:12px;border:1px solid transparent;border-radius:12px;color:#F4F2EE;transition:background .15s,border-color .15s" style-hover="background:#1C1C1F;border-color:#2F55D4;color:#F4F2EE">
+                      <span style="width:40px;height:40px;border-radius:8px;background:#1C1C1F;display:flex;align-items:center;justify-content:center">
+                        <sc-if value="{{ l.hasImg }}" hint-placeholder-val="{{ false }}">{{ l.imgEl }}</sc-if>
+                        <sc-if value="{{ l.hasIcon }}" hint-placeholder-val="{{ true }}"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="{{ l.icon }}" size="20" color="#FFB11B" hint-size="20px,20px"></x-import></sc-if>
+                      </span>
+                      <span style="display:flex;flex-direction:column;gap:3px;padding-top:1px">
+                        <span style="display:flex;align-items:center;gap:8px"><span style="font:600 16px/1.3 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE">{{ l.title }}</span><sc-if value="{{ l.hasBadge }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 6px;border:1px solid #2A2A2E;border-radius:4px;font:500 10px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">{{ l.badge }}</span></sc-if></span>
+                        <span style="font:400 14px/1.45 var(--font-body);color:#9C9A94;text-wrap:pretty">{{ l.sub }}</span>
+                      </span>
+                    </a>
+                  </sc-if>
+                </sc-for>
+              </div>
+              <div role="button" tabIndex="0" onClick="{{ openModal }}" style="cursor:pointer;display:flex;flex-direction:column;gap:12px;background:#0A0A0B;border:1px solid #2A2A2E;border-radius:12px;padding:24px;color:#F4F2EE;transition:border-color .15s" style-hover="border-color:#3A3A40;color:#F4F2EE">
+                <span style="font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#FFB11B">Comece por aqui</span>
+                <span style="font:600 18px/1.3 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Não sabe qual frente faz sentido agora?</span>
+                <span style="font:400 15px/1.55 var(--font-body);color:#9C9A94;text-wrap:pretty">Em 45 minutos mapeamos o gargalo da sua operação e indicamos o caminho.</span>
+                <span style="margin-top:auto;padding-top:12px;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--font-body);color:#FFB11B">Solicitar diagnóstico <span aria-hidden="true">→</span></span>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      <span class="eh-nav-cta"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="md" arrow="{{ false }}" onClick="{{ openModal }}" hint-size="auto,44px">Solicitar diagnóstico</x-import></span>
+      <button type="button" class="eh-nav-burger" onClick="{{ openMob }}" aria-label="Abrir menu" style="width:44px;height:44px;align-items:center;justify-content:center;border:1px solid #2A2A2E;border-radius:8px;background:#141416;color:#F4F2EE;cursor:pointer">
+        <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="menu" size="20" color="currentColor" hint-size="20px,20px"></x-import>
+      </button>
+    </div>
+  </nav>
+
+  <sc-if value="{{ mobOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;z-index:120;background:#0A0A0B;display:flex;flex-direction:column;overflow-y:auto;animation:eh-fade-in 160ms ease both">
+      <div style="flex:0 0 auto;height:72px;padding:0 16px;border-bottom:1px solid #2A2A2E;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#0A0A0B">
+        <img src="assets/logo/logo-escalahub-dark.svg" alt="Escala Hub" style="height:24px;width:auto;display:block">
+        <button type="button" onClick="{{ closeMob }}" aria-label="Fechar menu" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid #2A2A2E;border-radius:8px;background:#141416;color:#F4F2EE;cursor:pointer;font:400 18px/1 var(--font-mono)">×</button>
+      </div>
+      <div style="flex:1 1 auto;padding:24px 16px 32px;display:flex;flex-direction:column;gap:32px">
+        <sc-for list="{{ mobGroups }}" as="g" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <span style="font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94;margin-bottom:8px">{{ g.heading }}</span>
+            <sc-for list="{{ g.links }}" as="l" hint-placeholder-count="3">
+              <a href="{{ l.href }}" onClick="{{ closeMob }}" style="display:flex;align-items:center;min-height:48px;font:500 17px/1.3 var(--font-body);color:#F4F2EE;border-bottom:1px solid #1C1C1F" style-hover="color:#FFB11B">{{ l.title }}</a>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+      <div style="flex:0 0 auto;position:sticky;bottom:0;padding:16px;border-top:1px solid #2A2A2E;background:#0A0A0B;display:flex">
+        <button type="button" onClick="{{ openModalMob }}" style="flex:1;min-height:48px;border:0;border-radius:8px;background:#FFB11B;color:#0A0A0B;font:500 16px/1 var(--font-body);cursor:pointer" style-hover="background:#F27A1A">Solicitar diagnóstico</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- HERO -->
+  <section onMouseMove="{{ onHeroSectionMove }}" id="top" data-screen-label="Hero" style="background:#0A0A0B;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background:url(assets/bg/section-crop-ink.svg) right center/cover no-repeat;pointer-events:none"></div>
+    <div style="position:absolute;inset:0;background:url(assets/noise.svg);opacity:.03;pointer-events:none"></div>
+    <div style="position:relative;width:1200px;margin:0 auto;min-height:760px;display:grid;grid-template-columns:52fr 48fr;gap:40px;align-items:center;padding:80px 0 96px">
+      <div style="display:flex;flex-direction:column;align-items:flex-start">
+        <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Eyebrow" hint-size="auto,14px">Consultoria de e-commerce e marketplaces</x-import>
+        <h1 style="margin:24px 0 0;font:600 56px/1.08 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Ajudamos a construir e escalar sua operação de <span style="white-space:nowrap"><span style="display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;margin:0 10px 0 2px;background:#141416;border:1px solid #2A2A2E;border-radius:14px;vertical-align:-6px;line-height:1"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="shopping-cart" size="30" color="#FFB11B" hint-size="30px,30px"></x-import></span>e-commerce</span>.</h1>
+        <p style="margin:24px 0 0;font:400 20px/1.6 var(--font-body);color:#9C9A94;max-width:560px;text-wrap:pretty">Estratégia, gestão e tecnologia para marcas, indústrias e sellers crescerem em marketplaces e canais próprios com mais margem, controle e previsibilidade.</p>
+        <div style="display:flex;gap:12px;margin-top:40px;flex-wrap:wrap">
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="lg" arrow="{{ false }}" onClick="{{ openModal }}" hint-size="auto,52px">Solicitar diagnóstico</x-import>
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="lg" variant="secondary" arrow="{{ false }}" href="Em breve.dc.html" hint-size="auto,52px">Conhecer a Escala Hub</x-import>
+        </div>
+      </div>
+
+      <!-- Ecosystem diagram -->
+      <div data-eh="hero-art" onMouseEnter="{{ onHeroEnter }}" onMouseMove="{{ onHeroMove }}" onMouseLeave="{{ onHeroLeave }}" style="position:relative;width:640px;height:560px;justify-self:end">
+        <div style="position:absolute;left:50%;top:50%;width:520px;height:520px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(47,85,212,.22),transparent 68%);pointer-events:none;animation:eh-glow 4s ease-in-out infinite"></div>
+        <div ref="{{ parallaxRef }}" style="position:absolute;inset:0;transition:transform .4s cubic-bezier(.2,.8,.2,1);will-change:transform">
+          <div ref="{{ ringRef }}" style="position:absolute;inset:0;transform-origin:320px 280px;transform:rotate(var(--eh-a,0deg));will-change:transform">
+            <svg viewBox="0 0 640 560" style="position:absolute;inset:0;width:640px;height:560px;display:block;overflow:visible">
+              <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="8">
+                <line x1="320" y1="280" x2="{{ n.x }}" y2="{{ n.y }}" stroke="{{ n.lineColor }}" stroke-width="{{ n.lineW }}" style="stroke-dasharray:{{ n.len }};stroke-dashoffset:{{ n.len }};animation:eh-draw 1.1s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:{{ n.delay }};transition:stroke .25s,stroke-width .25s"></line>
+                <sc-if value="{{ n.pulse }}" hint-placeholder-val="{{ false }}">
+                  <circle r="3" fill="#FFB11B"><animateMotion dur="0.6s" repeatCount="indefinite" path="{{ n.path }}"></animateMotion></circle>
+                </sc-if>
+              </sc-for>
+            </svg>
+            <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="8">
+              <div onMouseEnter="{{ n.enter }}" onMouseLeave="{{ n.leave }}" onTouchStart="{{ n.tap }}" style="position:absolute;left:{{ n.x }}px;top:{{ n.y }}px;transform:translate(-50%,-50%) rotate(calc(-1 * var(--eh-a,0deg))) scale({{ n.scale }});transform-origin:center;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:{{ n.bg }};border:1px solid {{ n.border }};border-radius:4px;box-shadow:{{ n.glow }};font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:{{ n.color }};opacity:{{ n.opacity }};white-space:nowrap;cursor:pointer;transition:transform .2s ease-out,background-color .25s,color .25s,border-color .25s,box-shadow .25s,opacity .25s">
+                <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="{{ n.icon }}" size="14" color="{{ n.iconColor }}" hint-size="14px,14px"></x-import>
+                {{ n.label }}
+              </div>
+            </sc-for>
+          </div>
+          <div style="position:absolute;left:320px;top:280px;width:120px;height:120px;transform:translate(-50%,-50%);border-radius:50%;background:#0A0A0B;border:1px solid {{ core.border }};box-shadow:{{ core.shadow }};display:flex;align-items:center;justify-content:center;transition:border-color .25s,box-shadow .3s">
+            <img src="assets/logo/symbol-escalahub-dark.svg" alt="Escala Hub" style="width:56px;height:56px;display:block;transform:scale({{ core.scale }});transition:transform .3s cubic-bezier(.2,.8,.2,1)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA DE LOGOS (marquee) -->
+  <section data-screen-label="Logos" style="background:#141416;border-top:1px solid #2A2A2E;border-bottom:1px solid #2A2A2E;position:relative">
+    <div style="width:1200px;margin:0 auto;padding:32px 0">
+      <div style="position:relative;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)">
+        <div style="display:flex;width:max-content;animation:eh-marquee 40s linear infinite" style-hover="animation-play-state:paused">
+          <div style="display:flex;gap:64px;align-items:center;padding-right:64px;white-space:nowrap">
+            <img src="assets/marketplaces/mercado-livre-mono-dark.svg" alt="Mercado Livre" title="Mercado Livre" style="height:28px;width:auto;display:block;opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/amazon-logo-horizontal.svg" alt="Amazon" title="Amazon" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/shopee-logo-horizontal.svg" alt="Shopee" title="Shopee" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <span title="TikTok Shop" style="display:inline-flex;align-items:center;gap:10px;height:28px;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1"><img src="assets/marketplaces/tiktok-mono.svg" alt="" style="height:24px;width:auto;display:block"><span style="font:600 20px/1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;white-space:nowrap">TikTok Shop</span></span>
+            <img src="assets/marketplaces/shopify-white.svg" alt="Shopify" title="Shopify" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/woocommerce-white.svg" alt="WooCommerce" title="WooCommerce" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/nuvemshop.png" alt="Nuvemshop" title="Nuvemshop" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/tray.svg" alt="Tray" title="Tray" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/bling.svg" alt="Bling" title="Bling" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/olist-white.svg" alt="Olist" title="Olist" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+          </div>
+          <div aria-hidden="true" style="display:flex;gap:64px;align-items:center;padding-right:64px;white-space:nowrap">
+            <img src="assets/marketplaces/mercado-livre-mono-dark.svg" alt="Mercado Livre" title="Mercado Livre" style="height:28px;width:auto;display:block;opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/amazon-logo-horizontal.svg" alt="Amazon" title="Amazon" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/shopee-logo-horizontal.svg" alt="Shopee" title="Shopee" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <span title="TikTok Shop" style="display:inline-flex;align-items:center;gap:10px;height:28px;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1"><img src="assets/marketplaces/tiktok-mono.svg" alt="" style="height:24px;width:auto;display:block"><span style="font:600 20px/1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;white-space:nowrap">TikTok Shop</span></span>
+            <img src="assets/marketplaces/shopify-white.svg" alt="Shopify" title="Shopify" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/woocommerce-white.svg" alt="WooCommerce" title="WooCommerce" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/nuvemshop.png" alt="Nuvemshop" title="Nuvemshop" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/tray.svg" alt="Tray" title="Tray" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/bling.svg" alt="Bling" title="Bling" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+            <img src="assets/marketplaces/olist-white.svg" alt="Olist" title="Olist" style="height:28px;width:auto;display:block;filter:brightness(0) invert(.96);opacity:.6;transition:opacity .2s;cursor:default" style-hover="opacity:1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 ORIGEM -->
+  <section id="origem" data-reveal="1" data-screen-label="01 Origem" style="background:#0A0A0B;padding:140px 0 120px;position:relative">
+    <div style="width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+      <div style="display:flex;flex-direction:column;align-items:flex-start">
+        <h2 style="margin:0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Experiência construída dentro de uma operação real.</h2>
+        <p style="margin:24px 0 0;font:400 18px/1.6 var(--font-body);color:#9C9A94;max-width:520px;text-wrap:pretty">Antes de orientar outras empresas, construímos e operamos nossos próprios negócios de e-commerce. Foi enfrentando problemas reais de margem, estoque, logística, marketplaces e gestão que desenvolvemos o método da Escala Hub. É por isso que falamos a língua de quem opera.</p>
+        <div style="display:flex;gap:8px;margin-top:32px;flex-wrap:wrap">
+          <span style="display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Capital próprio</span>
+          <span style="display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Operação ativa</span>
+          <span style="display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Multicanal</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <span style="font:500 12px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94;margin-bottom:4px">O que operamos na prática</span>
+        <div style="background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:24px;display:grid;grid-template-columns:24px 1fr;gap:16px;align-items:start;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12)">
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="store" size="24" color="#FFB11B" hint-size="24px,24px"></x-import>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <h3 style="margin:0;font:600 20px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Marketplaces</h3>
+            <p style="margin:0;font:400 15px/1.5 var(--font-body);color:#9C9A94;text-wrap:pretty">Catálogo, ads e reputação no dia a dia.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"><span title="Mercado Livre" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/marketplaces/mercado-livre-mark-mono-dark.svg" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:brightness(0) invert(.96);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Mercado Livre</span></span><span title="Amazon" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/marketplaces/amazon-mark.svg" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:brightness(0) invert(.96);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Amazon</span></span><span title="Shopee" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/marketplaces/shopee-mark.svg" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:brightness(0) invert(.96);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Shopee</span></span><span title="TikTok Shop" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/marketplaces/tiktok-mono.svg" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:brightness(0) invert(.96);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">TikTok Shop</span></span></div>
+          </div>
+        </div>
+        <div style="background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:24px;display:grid;grid-template-columns:24px 1fr;gap:16px;align-items:start;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12)">
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="monitor" size="24" color="#FFB11B" hint-size="24px,24px"></x-import>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <h3 style="margin:0;font:600 20px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Loja própria</h3>
+            <p style="margin:0;font:400 15px/1.5 var(--font-body);color:#9C9A94;text-wrap:pretty">Canal próprio integrado ao ERP e aos marketplaces, do tema ao checkout: catálogo, conversão e tráfego rodando junto com a operação.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"><span title="Shopify" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/partners/shopify-mark-mono.svg" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:brightness(0) invert(.96);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Shopify</span></span><span title="WooCommerce" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">WooCommerce</span></span><span title="Nuvemshop" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/partners/nuvemshop-mark-mono.png" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:brightness(0) invert(.96);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Nuvemshop</span></span><span title="Tray" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/partners/tray-mark-mono.svg" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:brightness(0) invert(.96);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Tray</span></span></div>
+          </div>
+        </div>
+        <div style="background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:24px;display:grid;grid-template-columns:24px 1fr;gap:16px;align-items:start;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12)">
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="workflow" size="24" color="#FFB11B" hint-size="24px,24px"></x-import>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <h3 style="margin:0;font:600 20px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Operação no dia a dia</h3>
+            <p style="margin:0;font:400 15px/1.5 var(--font-body);color:#9C9A94;text-wrap:pretty">Pedidos, estoque, expedição e conciliação rodando no ERP e no painel, com reposição por curva ABC, custo por pedido e fluxo de caixa semanal.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"><span title="Metri Hub" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px 0 8px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><img src="assets/metrihub/metrihub-mark.svg" alt="" style="height:14px;width:auto;max-width:22px;object-fit:contain;display:block;filter:grayscale(1) brightness(2.4);opacity:.7;transition:opacity 160ms cubic-bezier(.2,.8,.2,1)"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Metri Hub</span></span><span title="Olist" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Olist</span></span><span title="Bling" style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px;border:1px solid #2A2A2E;border-radius:6px;background:#1C1C1F;cursor:default;transition:border-color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4"><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#9C9A94;white-space:nowrap;transition:color 160ms cubic-bezier(.2,.8,.2,1)">Bling</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 O DESAFIO + slider -->
+  <section data-reveal="1" data-screen-label="02 O desafio" style="background:#141416;padding:140px 0 120px;border-top:1px solid #2A2A2E;border-bottom:1px solid #2A2A2E;position:relative">
+    <div style="width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center">
+      <h2 style="margin:0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;max-width:760px;text-wrap:balance">O desafio não é apenas vender. É sustentar o crescimento.</h2>
+      <p style="margin:24px 0 0;font:400 18px/1.6 var(--font-body);color:#9C9A94;max-width:760px;text-wrap:pretty">Quando preço, mídia, estoque, logística, ERP e financeiro não conversam, aumentar o faturamento pode aumentar também o desperdício e a falta de controle. A Escala conecta essas frentes e transforma dados em prioridades claras para a operação.</p>
+
+      <div style="width:1000px;margin-top:64px;background:#0A0A0B;border:1px solid #2A2A2E;border-radius:12px;overflow:hidden;text-align:left">
+        <div style="display:flex;justify-content:space-between;align-items:stretch;border-bottom:1px solid #2A2A2E;padding:0 8px 0 0">
+          <div style="display:flex">
+            <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="8">
+              <button type="button" onClick="{{ t.select }}" style="background:none;border:0;border-bottom:1px solid {{ t.line }};margin-bottom:-1px;padding:18px 14px;cursor:pointer;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:{{ t.color }};transition:color .2s,border-color .2s">{{ t.label }}</button>
+            </sc-for>
+          </div>
+          <span style="align-self:center;font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#9C9A94;padding:0 16px">{{ counter }}</span>
+        </div>
+        <div style="position:relative;display:grid;grid-template-columns:1fr 1fr;min-height:220px">
+          <div style="padding:40px;border-right:1px solid #2A2A2E;display:flex;flex-direction:column;gap:16px;opacity:{{ slideOpacity }};transition:opacity .22s ease">
+            <span style="align-self:flex-start;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">A dor</span>
+            <p style="margin:0;font:600 24px/1.3 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">{{ slide.pain }}</p>
+          </div>
+          <div style="padding:40px;display:flex;flex-direction:column;gap:16px;opacity:{{ slideOpacity }};transition:opacity .22s ease">
+            <span style="align-self:flex-start;padding:4px 8px;border:1px solid #FFB11B;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#FFB11B">A virada</span>
+            <p style="margin:0;font:400 18px/1.55 var(--font-body);color:#F4F2EE;text-wrap:pretty">{{ slide.turn }}</p>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #2A2A2E;padding:12px 16px">
+          <div style="display:flex;gap:6px">
+            <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="8">
+              <span style="width:{{ t.dotW }}px;height:4px;border-radius:2px;background:{{ t.dot }};transition:all .3s"></span>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:8px">
+            <button type="button" onClick="{{ prev }}" aria-label="Anterior" style="width:36px;height:36px;border-radius:8px;border:1px solid #2A2A2E;background:#141416;color:#F4F2EE;cursor:pointer;font:400 16px/1 var(--font-mono);transition:all .16s" style-hover="border-color:#3A3A40;background:#1C1C1F">←</button>
+            <button type="button" onClick="{{ next }}" aria-label="Próximo" style="width:36px;height:36px;border-radius:8px;border:1px solid #2A2A2E;background:#141416;color:#F4F2EE;cursor:pointer;font:400 16px/1 var(--font-mono);transition:all .16s" style-hover="border-color:#3A3A40;background:#1C1C1F">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 SOLUÇÕES -->
+  <section id="solucoes" data-reveal="1" data-screen-label="03 Soluções" style="background:#0A0A0B;padding:140px 0 120px;position:relative">
+    <div style="width:1200px;margin:0 auto">
+      <h2 style="margin:0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;max-width:760px;text-wrap:pretty">Três pilares. Uma operação integrada.</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;position:relative">
+        <a href="Em breve.dc.html" style="position:relative;background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:16px;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12),0 0 40px rgba(47,85,212,.15);color:#F4F2EE">
+          <span style="position:absolute;right:24px;top:24px;font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#5C5B57">01</span>
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="trending-up" size="28" color="#FFB11B" hint-size="28px,28px"></x-import>
+          <h3 style="margin:12px 0 0;font:600 24px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Crescimento comercial</h3>
+          <p style="margin:0;font:400 15px/1.55 var(--font-body);color:#9C9A94;text-wrap:pretty">Marketplaces, loja própria, catálogo, mídia, pricing, conversão e expansão de canais.</p>
+          <span style="margin-top:auto;padding-top:12px;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--font-body);color:#F4F2EE">Ver detalhes <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="Em breve.dc.html" style="position:relative;background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:16px;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12),0 0 40px rgba(47,85,212,.15);color:#F4F2EE">
+          <span style="position:absolute;right:24px;top:24px;font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#5C5B57">02</span>
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="boxes" size="28" color="#FFB11B" hint-size="28px,28px"></x-import>
+          <h3 style="margin:12px 0 0;font:600 24px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Estrutura operacional</h3>
+          <p style="margin:0;font:400 15px/1.55 var(--font-body);color:#9C9A94;text-wrap:pretty">Estoque, logística, processos, indicadores, rotinas financeiras e organização da operação.</p>
+          <span style="margin-top:auto;padding-top:12px;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--font-body);color:#F4F2EE">Ver detalhes <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="Em breve.dc.html" style="position:relative;background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:16px;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12),0 0 40px rgba(47,85,212,.15);color:#F4F2EE">
+          <span style="position:absolute;right:24px;top:24px;font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#5C5B57">03</span>
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="cpu" size="28" color="#FFB11B" hint-size="28px,28px"></x-import>
+          <h3 style="margin:12px 0 0;font:600 24px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Tecnologia e dados</h3>
+          <p style="margin:0;font:400 15px/1.55 var(--font-body);color:#9C9A94;text-wrap:pretty">ERP, integrações, automações, dashboards e sistemas criados para reduzir trabalho manual e melhorar decisões.</p>
+          <span style="margin-top:auto;padding-top:12px;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--font-body);color:#F4F2EE">Ver detalhes <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+      <div style="display:flex;justify-content:center;margin-top:48px">
+        <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" variant="secondary" size="lg" href="Em breve.dc.html" hint-size="auto,52px">Conhecer nossas soluções</x-import>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 MÉTODO -->
+  <section data-reveal="1" data-screen-label="04 Método" style="background:#141416;padding:140px 0 120px;border-top:1px solid #2A2A2E;border-bottom:1px solid #2A2A2E;position:relative">
+    <div style="width:1200px;margin:0 auto">
+      <h2 style="margin:0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;max-width:760px;text-wrap:pretty">Diagnóstico, prioridade e execução.</h2>
+      <div style="position:relative;margin-top:72px">
+        <div style="position:absolute;left:0;right:0;top:5px;height:1px;background:#2A2A2E"></div>
+        <div ref="{{ progressRef }}" style="position:absolute;left:0;width:0%;top:5px;height:1px;background:#FFB11B;transition:width .15s linear"></div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <span style="width:11px;height:11px;border-radius:50%;background:#FFB11B;border:2px solid #141416;box-shadow:0 0 0 1px #FFB11B"></span>
+            <span style="font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#FFB11B;margin-top:12px">01</span>
+            <h3 style="margin:0;font:600 24px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Diagnóstico da operação</h3>
+            <p style="margin:0;font:400 16px/1.6 var(--font-body);color:#9C9A94;text-wrap:pretty;max-width:340px">Analisamos canais, números, processos e gargalos para entender onde o crescimento está travando.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <span style="width:11px;height:11px;border-radius:50%;background:#141416;border:2px solid #141416;box-shadow:0 0 0 1px #FFB11B"></span>
+            <span style="font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#FFB11B;margin-top:12px">02</span>
+            <h3 style="margin:0;font:600 24px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Plano de 90 dias</h3>
+            <p style="margin:0;font:400 16px/1.6 var(--font-body);color:#9C9A94;text-wrap:pretty;max-width:340px">Transformamos o diagnóstico em prioridades, responsáveis, indicadores e um plano executável.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <span style="width:11px;height:11px;border-radius:50%;background:#141416;border:2px solid #141416;box-shadow:0 0 0 1px #FFB11B"></span>
+            <span style="font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#FFB11B;margin-top:12px">03</span>
+            <h3 style="margin:0;font:600 24px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Acompanhamento</h3>
+            <p style="margin:0;font:400 16px/1.6 var(--font-body);color:#9C9A94;text-wrap:pretty;max-width:340px">Trabalhamos ao lado do seu time, acompanhando os números e ajustando a operação conforme ela evolui.</p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:64px;flex-wrap:wrap;padding-top:32px;border-top:1px solid #2A2A2E">
+        <span style="display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Consultor dedicado</span>
+        <span style="display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Acompanhamento recorrente</span>
+        <span style="display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Fee definido, sem % sobre faturamento</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 CONTEÚDO -->
+  <section id="conteudo" data-reveal="1" data-screen-label="05 Conteúdo" style="background:#0A0A0B;padding:140px 0 120px">
+    <div style="width:1200px;margin:0 auto">
+      <h2 style="margin:0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;max-width:760px">Ferramentas e conteúdo para quem opera.</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;align-items:stretch">
+        <div style="background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:16px;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12)">
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="calculator" size="24" color="#FFB11B" hint-size="24px,24px"></x-import>
+          <h3 style="margin:8px 0 0;font:600 22px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Calculadora de margem por marketplace</h3>
+          <div style="background:#0A0A0B;border:1px solid #2A2A2E;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div style="display:flex;justify-content:space-between;font:500 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94"><span>Preço</span><span>R$ —</span></div>
+              <div style="position:relative;height:2px;background:#2A2A2E;border-radius:1px"><div style="position:absolute;left:0;top:0;height:2px;width:62%;background:#F4F2EE"></div><span style="position:absolute;left:62%;top:50%;width:12px;height:12px;transform:translate(-50%,-50%);border-radius:50%;background:#F4F2EE;border:2px solid #0A0A0B"></span></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div style="display:flex;justify-content:space-between;font:500 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94"><span>Custo</span><span>R$ —</span></div>
+              <div style="position:relative;height:2px;background:#2A2A2E;border-radius:1px"><div style="position:absolute;left:0;top:0;height:2px;width:38%;background:#F4F2EE"></div><span style="position:absolute;left:38%;top:50%;width:12px;height:12px;transform:translate(-50%,-50%);border-radius:50%;background:#F4F2EE;border:2px solid #0A0A0B"></span></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding-top:12px;border-top:1px solid #2A2A2E">
+              <span style="font:500 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Margem</span>
+              <span style="display:inline-flex;align-items:baseline;gap:8px;font:600 28px/1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">— %<span style="font:500 14px/1 var(--font-mono);color:#3DDC97">↑</span></span>
+            </div>
+          </div>
+          <div style="margin-top:auto;padding-top:4px"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="sm" arrow="{{ false }}" href="Em breve.dc.html" hint-size="auto,36px">Usar grátis</x-import></div>
+        </div>
+        <a href="https://metrihub.com.br" target="_blank" rel="noopener" style="background:#0F1B33 url(assets/bg/card-corner-navy.svg) right bottom/cover no-repeat;border:1px solid #2F55D4;border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:16px;color:#F4F2EE;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="box-shadow:0 0 0 4px rgba(47,85,212,.18);color:#F4F2EE">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start">
+            <img src="assets/metrihub/metrihub-mark.svg" alt="" style="height:24px;width:auto;display:block">
+            <span style="padding:4px 8px;border:1px solid #2F55D4;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8">Em breve</span>
+          </div>
+          <h3 style="margin:8px 0 0;font:600 22px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Metri Hub</h3>
+          <p style="margin:0;font:400 15px/1.5 var(--font-body);color:#B7C0DC;text-wrap:pretty">Gestão de e-commerce multicanal num painel só. Nascido da nossa operação.</p>
+          <span style="margin-top:auto;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--font-body);color:#F4F2EE">Lista de espera <span aria-hidden="true">→</span></span>
+        </a>
+        <div style="background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:16px;transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#2F55D4;box-shadow:0 0 0 4px rgba(47,85,212,.12)">
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="scan-search" size="24" color="#FFB11B" hint-size="24px,24px"></x-import>
+          <h3 style="margin:8px 0 0;font:600 22px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Diagnóstico gratuito da operação</h3>
+          <p style="margin:0;font:400 15px/1.5 var(--font-body);color:#9C9A94;text-wrap:pretty">Uma conversa inicial para mapear canais, processos e gargalos.</p>
+          <button type="button" onClick="{{ openModal }}" style="margin-top:auto;display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:0;cursor:pointer;font:500 15px/1 var(--font-body);color:#F4F2EE">Solicitar <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 BLOG -->
+  <section id="blog" data-reveal="1" data-screen-label="06 Blog" style="background:#141416;padding:140px 0 120px;border-top:1px solid #2A2A2E;border-bottom:1px solid #2A2A2E">
+    <div style="width:1200px;margin:0 auto">
+      <h2 style="margin:0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;max-width:760px;text-wrap:pretty">O que aprendemos operando, escrito para quem opera.</h2>
+      <div style="position:relative;margin-top:56px;background:#0A0A0B;border:1px solid #2A2A2E;border-radius:16px;padding:64px;overflow:hidden">
+        <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(244,242,238,.06) 1px,transparent 1px);background-size:32px 32px;pointer-events:none"></div>
+        <div style="position:absolute;inset:0;background:url(assets/noise.svg);opacity:.04;pointer-events:none"></div>
+        <div style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+          <div style="display:flex;flex-direction:column;align-items:flex-start">
+            <span style="padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#FFB11B">Primeiros artigos em breve</span>
+            <h3 style="margin:20px 0 0;font:600 32px/1.25 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Estamos escrevendo o que a gente faria no seu lugar.</h3>
+            <p style="margin:16px 0 0;font:400 16px/1.6 var(--font-body);color:#9C9A94;max-width:480px;text-wrap:pretty">Guias, planilhas e checklists sobre margem, anúncios, estoque, caixa e sistema. Sem teoria: o que aplicamos nas nossas operações e nos clientes.</p>
+            <a href="https://wa.me/5511997957457" target="_blank" rel="noopener" style="margin-top:28px;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Enquanto isso, fale com a gente no WhatsApp <span aria-hidden="true">→</span></a>
+          </div>
+          <div data-eh="blog-art" style="position:relative;height:280px">
+            <div style="cursor:default;position:absolute;left:0;top:0;width:340px;transform:rotate(-2deg);background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 32px rgba(0,0,0,.35);z-index:3">
+              <span style="align-self:flex-start;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Margem</span>
+              <span style="font:600 16px/1.35 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE;text-wrap:pretty">Como saber quanto realmente sobra por venda no Mercado Livre</span>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+                <span style="height:8px;border-radius:4px;background:#1C1C1F;width:100%;overflow:hidden;position:relative;display:block"><span style="position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(244,242,238,.12),transparent);animation:eh-shimmer 2.4s ease-in-out infinite"></span></span>
+                <span style="height:8px;border-radius:4px;background:#1C1C1F;width:70%;display:block"></span>
+              </div>
+            </div>
+            <div style="cursor:default;position:absolute;left:24px;top:24px;width:340px;transform:rotate(0deg);background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 32px rgba(0,0,0,.35);z-index:2">
+              <span style="align-self:flex-start;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Anúncios</span>
+              <span style="font:600 16px/1.35 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE;text-wrap:pretty">Por que um anúncio bom não aparece, e o que mudar nele toda semana</span>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+                <span style="height:8px;border-radius:4px;background:#1C1C1F;width:100%;overflow:hidden;position:relative;display:block"><span style="position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(244,242,238,.12),transparent);animation:eh-shimmer 2.4s ease-in-out infinite;animation-delay:.4s"></span></span>
+                <span style="height:8px;border-radius:4px;background:#1C1C1F;width:70%;display:block"></span>
+              </div>
+            </div>
+            <div style="cursor:default;position:absolute;left:48px;top:48px;width:340px;transform:rotate(2deg);background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 32px rgba(0,0,0,.35);z-index:1">
+              <span style="align-self:flex-start;padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Sistema</span>
+              <span style="font:600 16px/1.35 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE;text-wrap:pretty">Migrar de sistema sem parar a operação: o checklist que usamos</span>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+                <span style="height:8px;border-radius:4px;background:#1C1C1F;width:100%;overflow:hidden;position:relative;display:block"><span style="position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(244,242,238,.12),transparent);animation:eh-shimmer 2.4s ease-in-out infinite;animation-delay:.8s"></span></span>
+                <span style="height:8px;border-radius:4px;background:#1C1C1F;width:70%;display:block"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRI HUB -->
+  <section id="metri" data-reveal="1" data-screen-label="Metri Hub" style="background:#0F1B33;padding:120px 0;position:relative;overflow:hidden;border-top:1px solid rgba(47,85,212,.4);border-bottom:1px solid rgba(47,85,212,.4)">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(47,85,212,.12) 1px,transparent 1px);background-size:32px 32px;pointer-events:none"></div>
+    <div style="position:absolute;inset:0;background:url(assets/noise.svg);opacity:.04;pointer-events:none"></div>
+    <div style="position:absolute;right:0;top:50%;width:720px;height:720px;transform:translate(20%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(47,85,212,.3),transparent 70%);pointer-events:none"></div>
+    <div style="position:relative;width:1200px;margin:0 auto">
+      <div style="display:flex;align-items:center;gap:12px;height:28px">
+        <img src="assets/metrihub/metrihub-logo-primary-dark.svg" alt="Metri Hub" style="height:28px;width:auto;display:block">
+      </div>
+      <div style="display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:center;margin-top:48px">
+        <div style="display:flex;flex-direction:column;align-items:flex-start">
+          <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Eyebrow" color="#2F55D4" hint-size="auto,14px">Incluso para clientes Escala Hub</x-import>
+          <h2 style="margin:16px 0 0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Todo cliente Escala Hub opera com o Metri Hub.</h2>
+          <p style="margin:20px 0 0;font:400 18px/1.6 var(--font-body);color:#B7C0DC;text-wrap:pretty">Central de inteligência para operações de marketplace. Não mostra só dados: identifica o problema, calcula o impacto em reais e diz o que fazer e quem resolve.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;margin-top:40px">
+            <div style="display:grid;grid-template-columns:20px 1fr;gap:12px;align-items:start">
+              <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="sparkles" size="20" color="#F4F2EE" hint-size="20px,20px"></x-import>
+              <div style="display:flex;flex-direction:column;gap:4px"><h3 style="margin:0;font:600 18px/1.25 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Diagnóstico com IA</h3><p style="margin:0;font:400 14px/1.5 var(--font-body);color:#B7C0DC">Nota de A a E da sua operação, com o que puxa a nota para baixo.</p></div>
+            </div>
+            <div style="display:grid;grid-template-columns:20px 1fr;gap:12px;align-items:start">
+              <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="bell-ring" size="20" color="#F4F2EE" hint-size="20px,20px"></x-import>
+              <div style="display:flex;flex-direction:column;gap:4px"><h3 style="margin:0;font:600 18px/1.25 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Alertas em reais</h3><p style="margin:0;font:400 14px/1.5 var(--font-body);color:#B7C0DC">Cada problema vem com impacto estimado em R$ e prazo para agir.</p></div>
+            </div>
+            <div style="display:grid;grid-template-columns:20px 1fr;gap:12px;align-items:start">
+              <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="percent" size="20" color="#F4F2EE" hint-size="20px,20px"></x-import>
+              <div style="display:flex;flex-direction:column;gap:4px"><h3 style="margin:0;font:600 18px/1.25 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Margem real por SKU</h3><p style="margin:0;font:400 14px/1.5 var(--font-body);color:#B7C0DC">Preço, tarifa, frete, imposto e ads dentro da conta.</p></div>
+            </div>
+            <div style="display:grid;grid-template-columns:20px 1fr;gap:12px;align-items:start">
+              <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="list-checks" size="20" color="#F4F2EE" hint-size="20px,20px"></x-import>
+              <div style="display:flex;flex-direction:column;gap:4px"><h3 style="margin:0;font:600 18px/1.25 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Tarefas com dono</h3><p style="margin:0;font:400 14px/1.5 var(--font-body);color:#B7C0DC">Do alerta à ação: responsável, prazo e resultado acompanhados pelo seu consultor.</p></div>
+            </div>
+          </div>
+          <a href="https://metrihub.com.br" target="_blank" rel="noopener" style="margin-top:36px;display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 24px;border:1px solid #F4F2EE;border-radius:8px;color:#F4F2EE;font:500 16px/1 var(--font-body);transition:all 160ms cubic-bezier(.2,.8,.2,1)" style-hover="background:rgba(244,242,238,.08);color:#F4F2EE">Conhecer o Metri Hub <span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- App mock -->
+        <div data-eh="metri-art" onMouseMove="{{ onMockMove }}" onMouseLeave="{{ onMockLeave }}" style="position:relative;height:620px;margin-right:-160px">
+          <div style="position:absolute;left:40px;top:20px;width:720px;height:520px;transform:rotate(4deg);transform-origin:left top;background:#0A0F1E;border:1px solid #2F55D4;border-radius:12px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.5)">
+            <div style="height:40px;display:flex;align-items:center;gap:8px;padding:0 14px;border-bottom:1px solid rgba(47,85,212,.4);background:#0C1226">
+              <span style="width:10px;height:10px;border-radius:50%;background:#2A2A2E"></span><span style="width:10px;height:10px;border-radius:50%;background:#2A2A2E"></span><span style="width:10px;height:10px;border-radius:50%;background:#2A2A2E"></span>
+              <span style="margin-left:12px;flex:1;height:22px;border-radius:6px;background:rgba(47,85,212,.15);border:1px solid rgba(47,85,212,.3);display:flex;align-items:center;padding:0 10px;font:500 11px/1 var(--font-mono);letter-spacing:.04em;color:#8FA3E8">app.metrihub.com.br</span>
+            </div>
+            <div style="display:grid;grid-template-columns:160px 1fr;height:480px">
+              <div style="border-right:1px solid rgba(47,85,212,.3);padding:16px 12px;display:flex;flex-direction:column;gap:6px">
+                <span style="padding:8px 10px;border-radius:6px;background:rgba(47,85,212,.25);font:500 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#F4F2EE">Início</span>
+                <span style="padding:8px 10px;font:500 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#8FA3E8">Alertas</span>
+                <span style="padding:8px 10px;font:500 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#8FA3E8">Margem</span>
+                <span style="padding:8px 10px;font:500 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#8FA3E8">Anúncios</span>
+                <span style="padding:8px 10px;font:500 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#8FA3E8">Estoque</span>
+                <span style="padding:8px 10px;font:500 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#8FA3E8">Tarefas</span>
+              </div>
+              <div style="padding:20px;display:flex;flex-direction:column;gap:16px">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                  <span style="font:600 18px/1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Início</span>
+                  <span style="padding:3px 8px;border:1px solid rgba(47,85,212,.5);border-radius:4px;font:500 10px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8">Últimos 7 dias</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                  <div style="background:#0F1B33;border:1px solid rgba(47,85,212,.5);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:12px">
+                    <span style="font:500 10px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8">Nota da operação</span>
+                    <span style="font:600 96px/1 var(--font-display);letter-spacing:-0.04em;color:#F4F2EE">B</span>
+                    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px">
+                      <span style="height:6px;border-radius:3px;background:rgba(47,85,212,.35)"></span><span style="height:6px;border-radius:3px;background:#FFB11B"></span><span style="height:6px;border-radius:3px;background:rgba(47,85,212,.35)"></span><span style="height:6px;border-radius:3px;background:rgba(47,85,212,.35)"></span><span style="height:6px;border-radius:3px;background:rgba(47,85,212,.35)"></span>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(5,1fr);font:500 10px/1 var(--font-mono);letter-spacing:.08em;color:#8FA3E8;text-align:center"><span>A</span><span style="color:#F4F2EE">B</span><span>C</span><span>D</span><span>E</span></div>
+                  </div>
+                  <div style="background:#0F1B33;border:1px solid rgba(47,85,212,.5);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:12px">
+                    <span style="font:500 10px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8">Saúde por eixo</span>
+                    <svg viewBox="0 0 200 200" style="display:block;width:100%;height:auto;max-height:190px">
+                      <polygon points="100,20 156.6,43.4 180,100 156.6,156.6 100,180 43.4,156.6 20,100 43.4,43.4" fill="none" stroke="rgba(47,85,212,.45)" stroke-width="1"></polygon>
+                      <polygon points="100,50 135.4,64.6 150,100 135.4,135.4 100,150 64.6,135.4 50,100 64.6,64.6" fill="none" stroke="rgba(47,85,212,.45)" stroke-width="1"></polygon>
+                      <polygon points="100,80 114.1,85.9 120,100 114.1,114.1 100,120 85.9,114.1 80,100 85.9,85.9" fill="none" stroke="rgba(47,85,212,.45)" stroke-width="1"></polygon>
+                      <line x1="100" y1="100" x2="100" y2="20" stroke="rgba(47,85,212,.35)" stroke-width="1"></line><line x1="100" y1="100" x2="156.6" y2="43.4" stroke="rgba(47,85,212,.35)" stroke-width="1"></line><line x1="100" y1="100" x2="180" y2="100" stroke="rgba(47,85,212,.35)" stroke-width="1"></line><line x1="100" y1="100" x2="156.6" y2="156.6" stroke="rgba(47,85,212,.35)" stroke-width="1"></line><line x1="100" y1="100" x2="100" y2="180" stroke="rgba(47,85,212,.35)" stroke-width="1"></line><line x1="100" y1="100" x2="43.4" y2="156.6" stroke="rgba(47,85,212,.35)" stroke-width="1"></line><line x1="100" y1="100" x2="20" y2="100" stroke="rgba(47,85,212,.35)" stroke-width="1"></line><line x1="100" y1="100" x2="43.4" y2="43.4" stroke="rgba(47,85,212,.35)" stroke-width="1"></line>
+                      <polygon points="100,36 142,58 164,100 128,128 100,158 60,140 44,100 72,72" fill="rgba(47,85,212,.25)" stroke="#2F55D4" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                      <circle cx="128" cy="128" r="3.5" fill="#FFB11B"></circle>
+                    </svg>
+                  </div>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+                  <div style="border:1px solid rgba(47,85,212,.35);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:6px"><span style="font:500 10px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8">Alertas abertos</span><span style="height:8px;width:70%;border-radius:4px;background:rgba(47,85,212,.5)"></span></div>
+                  <div style="border:1px solid rgba(47,85,212,.35);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:6px"><span style="font:500 10px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8">Tarefas da semana</span><span style="height:8px;width:45%;border-radius:4px;background:rgba(47,85,212,.5)"></span></div>
+                  <div style="border:1px solid rgba(47,85,212,.35);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:6px"><span style="font:500 10px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8">Margem por canal</span><span style="height:8px;width:85%;border-radius:4px;background:#FFB11B"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ref="{{ mockRef }}" style="position:absolute;inset:0;pointer-events:none;transition:transform .4s cubic-bezier(.2,.8,.2,1)">
+            <div style="position:absolute;left:-24px;top:120px;display:flex;align-items:center;gap:12px;padding:12px 14px;background:#0A0F1E;border:1px solid #FFB11B;border-radius:8px;box-shadow:0 0 0 4px rgba(255,177,27,.12),0 16px 40px rgba(0,0,0,.5)">
+              <span style="width:8px;height:8px;border-radius:50%;background:#FFB11B;animation:eh-pulse 2s ease-out infinite"></span>
+              <div style="display:flex;flex-direction:column;gap:3px"><span style="font:500 13px/1.3 var(--font-body);color:#F4F2EE">Anúncio pausado há 3 dias</span><span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;color:#FFB11B">R$ 890/sem</span></div>
+            </div>
+            <div style="position:absolute;left:420px;top:40px;display:flex;align-items:center;gap:12px;padding:12px 14px;background:#0A0F1E;border:1px solid #2F55D4;border-radius:8px;box-shadow:0 16px 40px rgba(0,0,0,.5)">
+              <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="trending-up" size="16" color="#8FA3E8" hint-size="16px,16px"></x-import>
+              <span style="font:500 13px/1.3 var(--font-body);color:#F4F2EE">Tarifa subiu em 12 anúncios</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="position:relative;margin-top:72px;border-top:1px solid rgba(47,85,212,.4);border-bottom:1px solid rgba(47,85,212,.4);overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)">
+      <div style="display:flex;width:max-content;animation:eh-marquee 36s linear infinite" style-hover="animation-play-state:paused">
+        <div style="display:flex;align-items:center;gap:40px;padding:14px 20px 14px 0;font:500 12px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8;white-space:nowrap">
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#FFB11B"></span>Anúncio pausado há 3 dias · R$ 890/sem</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Estoque Full acaba em 6 dias</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Tarifa subiu em 12 anúncios</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#FFB11B"></span>Margem negativa em 4 SKUs</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Reputação: 2 reclamações sem resposta</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Campanha acima do ACOS meta</span>
+          <span style="width:1px;height:14px;background:rgba(47,85,212,.5)"></span>
+        </div>
+        <div aria-hidden="true" style="display:flex;align-items:center;gap:40px;padding:14px 20px 14px 20px;font:500 12px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#8FA3E8;white-space:nowrap">
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#FFB11B"></span>Anúncio pausado há 3 dias · R$ 890/sem</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Estoque Full acaba em 6 dias</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Tarifa subiu em 12 anúncios</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#FFB11B"></span>Margem negativa em 4 SKUs</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Reputação: 2 reclamações sem resposta</span>
+          <span style="display:inline-flex;align-items:center;gap:10px"><span style="width:6px;height:6px;border-radius:50%;background:#2F55D4"></span>Campanha acima do ACOS meta</span>
+          <span style="width:1px;height:14px;background:rgba(47,85,212,.5)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 PARCEIROS -->
+  <section id="parceiros" data-reveal="1" data-screen-label="07 Parceiros" style="background:#0A0A0B;padding:140px 0 120px">
+    <div style="width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:80px;align-items:start">
+      <div style="display:flex;flex-direction:column;align-items:flex-start">
+        <span style="font:500 12px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#FFB11B">Programa de parceiros</span>
+        <h2 style="margin:20px 0 0;font:600 44px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;text-wrap:pretty">Indique sellers. Ganhe recorrência.</h2>
+        <p style="margin:24px 0 0;font:400 18px/1.6 var(--font-body);color:#9C9A94;text-wrap:pretty">Para agências, contadores, ERPs e consultores que já atendem quem vende online. Você indica, a gente executa a consultoria e você recebe todo mês enquanto o contrato durar.</p>
+        <div style="display:flex;gap:48px;margin-top:40px;padding-top:32px;border-top:1px solid #2A2A2E;width:100%">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <span style="font:600 40px/1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">20%</span>
+            <span style="font:500 12px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Comissão recorrente</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <span style="font:600 40px/1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">48h</span>
+            <span style="font:500 12px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Retorno da indicação</span>
+          </div>
+        </div>
+        <a href="Em breve.dc.html" style="margin-top:40px;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--font-body);color:#F4F2EE;text-decoration:none;transition:color 160ms cubic-bezier(.2,.8,.2,1)" style-hover="color:#FFB11B">Quero ser parceiro <span aria-hidden="true">→</span></a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:start;background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:28px 32px;transition:border-color 160ms cubic-bezier(.2,.8,.2,1),background 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#3A3A40;background:#1C1C1F">
+          <span style="font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#FFB11B;padding-top:6px">01</span>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font:600 20px/1.25 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE">Você indica o seller</h3>
+            <p style="margin:0;font:400 16px/1.6 var(--font-body);color:#9C9A94;text-wrap:pretty">Um formulário curto com canal, faturamento e o problema principal. Sem planilha, sem burocracia.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:start;background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:28px 32px;transition:border-color 160ms cubic-bezier(.2,.8,.2,1),background 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#3A3A40;background:#1C1C1F">
+          <span style="font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#FFB11B;padding-top:6px">02</span>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font:600 20px/1.25 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE">A gente faz o diagnóstico</h3>
+            <p style="margin:0;font:400 16px/1.6 var(--font-body);color:#9C9A94;text-wrap:pretty">Nosso time conduz a reunião e apresenta o plano de 90 dias. Você entra na conversa se quiser.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:start;background:#141416;border:1px solid #2A2A2E;border-radius:12px;padding:28px 32px;transition:border-color 160ms cubic-bezier(.2,.8,.2,1),background 160ms cubic-bezier(.2,.8,.2,1)" style-hover="border-color:#3A3A40;background:#1C1C1F">
+          <span style="font:500 12px/1 var(--font-mono);letter-spacing:.08em;color:#FFB11B;padding-top:6px">03</span>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <h3 style="margin:0;font:600 20px/1.25 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE">Você recebe todo mês</h3>
+            <p style="margin:0;font:400 16px/1.6 var(--font-body);color:#9C9A94;text-wrap:pretty">Comissão paga enquanto o cliente segue com a gente, com relatório do que está sendo executado.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+          <span style="padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Agências</span>
+          <span style="padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Contadores</span>
+          <span style="padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">ERPs e softwares</span>
+          <span style="padding:4px 8px;border:1px solid #2A2A2E;border-radius:4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Consultores</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 CTA FINAL -->
+  <section id="diagnostico" data-reveal="1" data-screen-label="08 CTA final" style="background:#0A0A0B url(assets/bg/section-outline-ink.svg) right center/cover no-repeat;padding:140px 0;position:relative;overflow:hidden;border-top:1px solid #2A2A2E">
+    <div style="position:absolute;inset:0;background:url(assets/noise.svg);opacity:.03;pointer-events:none"></div>
+    <div style="position:relative;width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:flex-start">
+      <h2 style="margin:0;font:600 48px/1.1 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE;max-width:720px;text-wrap:pretty">Qual é o próximo gargalo da sua operação?</h2>
+      <p style="margin:24px 0 0;font:400 18px/1.6 var(--font-body);color:#9C9A94;max-width:560px;text-wrap:pretty">Conte o momento do seu e-commerce. Em uma conversa inicial, identificamos onde a Escala Hub pode gerar mais impacto.</p>
+      <div style="margin-top:40px"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="lg" arrow="{{ false }}" onClick="{{ openModal }}" hint-size="auto,52px">Solicitar diagnóstico</x-import></div>
+      <span style="margin-top:24px;font:500 12px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Resposta em até 1 dia útil · Sem compromisso</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer data-screen-label="Footer" style="background:#0A0A0B;border-top:1px solid #2A2A2E;color:#9C9A94">
+    <div style="width:1200px;margin:0 auto;padding:80px 0 40px;display:grid;grid-template-columns:320px repeat(4,1fr);gap:32px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <img src="assets/logo/logo-escalahub-dark.svg" alt="Escala Hub" style="height:28px;width:auto;display:block;align-self:flex-start">
+        <p style="margin:0;font:400 15px/1.5 var(--font-body);color:#9C9A94;max-width:288px;text-wrap:pretty">Estruturamos e aceleramos operações de e-commerce.</p>
+        <div style="display:flex;align-items:center;gap:16px">
+          <a href="https://instagram.com/escalahub" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;color:#F4F2EE" style-hover="color:#FFB11B">
+            <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="instagram" size="20" color="currentColor" hint-size="20px,20px"></x-import>
+          </a>
+          <a href="https://www.linkedin.com/company/escala-hub/" target="_blank" rel="noopener" aria-label="LinkedIn" style="display:inline-flex;color:#F4F2EE" style-hover="color:#FFB11B">
+            <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="linkedin" size="20" color="currentColor" hint-size="20px,20px"></x-import>
+          </a>
+          <span aria-label="YouTube" title="YouTube · em breve" style="display:inline-flex;color:#F4F2EE;opacity:.6">
+            <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="youtube" size="20" color="currentColor" hint-size="20px,20px"></x-import>
+          </span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h4 style="margin:0 0 4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Soluções</h4>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Mentoria para Marketplaces</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Criação de E-commerce</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Gestão de E-commerce</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Construção de Marca</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h4 style="margin:0 0 4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Canais</h4>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Mercado Livre</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Shopee</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Amazon</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">TikTok Shop</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Loja própria</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h4 style="margin:0 0 4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Empresa</h4>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Sobre</a>
+        <a href="Em breve.dc.html" style="font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Blog</a>
+        <a role="button" tabIndex="0" onClick="{{ openModal }}" style="cursor:pointer;font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Contato</a>
+        <a href="https://metrihub.com.br" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">Metri Hub<span style="font-size:12px">↗</span></a>
+        <a href="https://glnstudio.com.br" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B">GLN Studio<span style="font-size:12px">↗</span></a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+        <h4 style="margin:0 0 4px;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94">Contato</h4>
+        <a href="https://wa.me/5511997957457" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="flex:0 0 16px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.966 1.164-.198.199-.396.223-.693.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.446.52-.669.174-.223.232-.383.347-.643.116-.26.058-.48-.03-.643-.087-.163-.633-1.526-.867-2.084-.23-.552-.462-.464-.63-.472-.164-.008-.354-.01-.545-.01-.19 0-.5.074-.76.371-.26.297-.99.967-.99 2.36 0 1.394 1.015 2.74 1.156 2.93.14.19 1.983 3.056 4.87 4.283.681.29 1.213.462 1.628.592.68.216 1.298.185 1.787.112.545-.081 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>(11) 99795-7457</a>
+        <a href="mailto:contato@escalahub.com.br" style="display:inline-flex;align-items:center;gap:8px;font:400 15px/1.4 var(--font-body);color:#F4F2EE" style-hover="color:#FFB11B"><span style="display:inline-flex;flex:0 0 16px"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="mail" size="16" color="currentColor" hint-size="16px,16px"></x-import></span>contato@escalahub.com.br</a>
+        <span style="font:400 15px/1.4 var(--font-body);color:#9C9A94">São Paulo, SP</span>
+        <div style="margin-top:6px"><x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="sm" arrow="{{ false }}" onClick="{{ openModal }}" hint-size="auto,36px">Solicitar diagnóstico</x-import></div>
+      </div>
+    </div>
+    <div style="width:1200px;margin:0 auto;padding:24px 0;border-top:1px solid #2A2A2E;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font:500 12px/1.4 var(--font-mono);letter-spacing:.06em;color:#9C9A94">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <span>© 2026 Escala Hub Consultoria e Negócios Ltda.</span><span style="color:#2A2A2E">·</span><span>CNPJ 54.988.708/0001-21</span><span style="color:#2A2A2E">·</span><a href="Privacidade.dc.html" style="color:#9C9A94" style-hover="color:#FFB11B">Privacidade</a><span style="color:#2A2A2E">·</span><a href="Termos.dc.html" style="color:#9C9A94" style-hover="color:#FFB11B">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="eh-wa" style="position:fixed;right:24px;bottom:24px;width:56px;height:56px;z-index:90">
+    <a class="eh-wa-btn" href="https://wa.me/5511997957457?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Escala%20Hub%20e%20quero%20falar%20sobre%20minha%20opera%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" style="position:absolute;right:0;bottom:0;display:flex;align-items:center;justify-content:flex-end;width:56px;height:56px;border-radius:28px;background:#25D366;box-shadow:0 8px 24px rgba(0,0,0,.4);overflow:hidden;cursor:pointer;text-decoration:none;transition:width 200ms cubic-bezier(.2,.8,.2,1)" style-hover="width:202px">
+      <span class="eh-wa-label" style="flex:0 0 auto;padding:0 6px 0 20px;white-space:nowrap;font:500 14px/1 var(--font-body);color:#FFFFFF">Falar no WhatsApp</span>
+      <span class="eh-wa-ico" style="flex:0 0 56px;width:56px;height:56px;display:flex;align-items:center;justify-content:center">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.966 1.164-.198.199-.396.223-.693.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.446.52-.669.174-.223.232-.383.347-.643.116-.26.058-.48-.03-.643-.087-.163-.633-1.526-.867-2.084-.23-.552-.462-.464-.63-.472-.164-.008-.354-.01-.545-.01-.19 0-.5.074-.76.371-.26.297-.99.967-.99 2.36 0 1.394 1.015 2.74 1.156 2.93.14.19 1.983 3.056 4.87 4.283.681.29 1.213.462 1.628.592.68.216 1.298.185 1.787.112.545-.081 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      </span>
+    </a>
+  </div>
+
+  <sc-if value="{{ cookieVisible }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;left:24px;bottom:24px;width:360px;z-index:100;background:#141416;border:1px solid #2A2A2E;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.45);padding:24px;display:flex;flex-direction:column;gap:16px;animation:eh-cookie-in .3s cubic-bezier(.2,.8,.2,1) both">
+      <div style="display:flex;align-items:flex-start;gap:12px">
+        <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Icon" name="cookie" size="22" color="#FFB11B" hint-size="22px,22px"></x-import>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <h3 style="margin:0;font:600 16px/1.3 var(--font-display);letter-spacing:-0.01em;color:#F4F2EE">Sua privacidade</h3>
+          <p style="margin:0;font:400 14px/1.5 var(--font-body);color:#9C9A94;text-wrap:pretty">Usamos cookies para melhorar sua experiência e medir o site. Você escolhe.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;font:500 12px/1 var(--font-mono);letter-spacing:.06em">
+        <a href="Privacidade.dc.html" style="color:#9C9A94">Política de Privacidade</a><span style="color:#2A2A2E">·</span><a href="Termos.dc.html" style="color:#9C9A94">Termos de Uso</a>
+      </div>
+      <div style="display:flex;gap:8px">
+        <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="sm" arrow="{{ false }}" onClick="{{ acceptCookies }}" hint-size="auto,36px">Aceitar</x-import>
+        <x-import component-from-global-scope="EscalaHubDesignSystem_209bdb.Button" size="sm" variant="secondary" arrow="{{ false }}" onClick="{{ essentialCookies }}" hint-size="auto,36px">Só essenciais</x-import>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeModal }}" style="position:fixed;inset:0;z-index:200;background:rgba(10,10,11,.7);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;padding:24px">
+      <div onClick="{{ stopClick }}" style="position:relative;width:900px;height:640px;max-width:100%;max-height:100%;background:#141416;border:1px solid #2A2A2E;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 12px 32px rgba(0,0,0,.45)">
+        <button type="button" onClick="{{ closeModal }}" aria-label="Fechar" style="position:absolute;right:20px;top:20px;width:36px;height:36px;border-radius:8px;border:1px solid #2A2A2E;background:#0A0A0B;color:#F4F2EE;cursor:pointer;font:400 18px/1 var(--font-mono);display:flex;align-items:center;justify-content:center;transition:all .16s;z-index:1" style-hover="border-color:#3A3A40;background:#1C1C1F">×</button>
+        <div style="padding:32px 60px 24px 32px;border-bottom:1px solid #2A2A2E;display:flex;flex-direction:column;gap:8px">
+          <span style="font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#FFB11B">Diagnóstico gratuito · 45 min</span>
+          <span style="font:400 15px/1.5 var(--font-body);color:#9C9A94">Escolha um horário. Sem compromisso.</span>
+        </div>
+        <div style="flex:1;position:relative;background:#0A0A0B;padding:24px">
+          <iframe src="https://cal.com/eduardo-galan/consultoria-gratuita?embed=true&amp;theme=dark&amp;layout=month_view" title="Agenda do diagnóstico gratuito" width="100%" height="100%" frameborder="0" allow="camera; microphone; fullscreen" loading="lazy" onLoad="{{ calOnLoad }}" style="position:absolute;inset:0;width:100%;height:100%;border:0;z-index:1;background:transparent"></iframe>
+          <sc-if value="{{ calLoading }}" hint-placeholder-val="{{ true }}">
+          <div aria-hidden="true" style="position:absolute;inset:24px;border:1px dashed rgba(244,242,238,.25);border-radius:12px;display:grid;grid-template-columns:1fr 220px;overflow:hidden;opacity:.4;pointer-events:none;z-index:0">
+            <div style="padding:28px;display:flex;flex-direction:column;gap:24px">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <span style="font:600 20px/1.2 var(--font-display);letter-spacing:-0.02em;color:#F4F2EE">Setembro 2026</span>
+                <div style="display:flex;gap:8px">
+                  <span style="width:28px;height:28px;border-radius:6px;border:1px solid #2A2A2E;display:flex;align-items:center;justify-content:center;font:400 14px/1 var(--font-mono);color:#9C9A94">←</span>
+                  <span style="width:28px;height:28px;border-radius:6px;border:1px solid #2A2A2E;display:flex;align-items:center;justify-content:center;font:400 14px/1 var(--font-mono);color:#9C9A94">→</span>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:10px">
+                <sc-for list="{{ weekDays }}" as="w" hint-placeholder-count="7">
+                  <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+                    <span style="font:500 11px/1 var(--font-mono);letter-spacing:.06em;color:#5C5B57">{{ w.wd }}</span>
+                    <span style="width:40px;height:40px;border-radius:8px;background:{{ w.bg }};color:{{ w.color }};border:1px solid {{ w.border }};display:flex;align-items:center;justify-content:center;font:500 15px/1 var(--font-body)">{{ w.d }}</span>
+                  </div>
+                </sc-for>
+              </div>
+              <span style="margin-top:auto;font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#5C5B57">Calendário · Cal.com embed</span>
+            </div>
+            <div style="border-left:1px solid #2A2A2E;padding:28px 20px;display:flex;flex-direction:column;gap:10px">
+              <span style="font:500 11px/1.2 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:#9C9A94;margin-bottom:4px">Qui, 17 set</span>
+              <sc-for list="{{ timeSlots }}" as="s" hint-placeholder-count="6">
+                <span style="padding:10px 12px;border-radius:8px;background:{{ s.bg }};color:{{ s.color }};border:1px solid {{ s.border }};font:500 14px/1 var(--font-mono);text-align:center">{{ s.label }}</span>
+              </sc-for>
+            </div>
+            <div style="position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(244,242,238,.10),transparent);animation:eh-shimmer 2.4s ease-in-out infinite"></div>
+          </div>
+          </sc-if>
+        </div>
+        <div style="padding:14px 32px;border-top:1px solid #2A2A2E;background:#141416">
+          <a href="https://cal.com/eduardo-galan/consultoria-gratuita" target="_blank" rel="noopener" style="font:500 11px/1.4 var(--font-mono);letter-spacing:.06em;color:#9C9A94" style-hover="color:#FFB11B">Não carregou? Abrir agenda em nova aba →</a>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;autoplay&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Slider&quot;},&quot;stickyNav&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Comportamento&quot;}}">
+const CX = 320, CY = 280;
+const NODES = [
+  { label: 'Marketplaces', icon: 'store', x: 320, y: 70 },
+  { label: 'Loja própria', icon: 'shopping-bag', x: 497, y: 132 },
+  { label: 'Precificação', icon: 'tag', x: 570, y: 280 },
+  { label: 'Estoque', icon: 'boxes', x: 497, y: 428 },
+  { label: 'Logística', icon: 'truck', x: 320, y: 490 },
+  { label: 'ERP', icon: 'database', x: 143, y: 428 },
+  { label: 'Financeiro', icon: 'wallet', x: 70, y: 280 },
+  { label: 'Dados', icon: 'bar-chart-3', x: 143, y: 132 },
+].map((n, i) => ({ ...n, len: Math.round(Math.hypot(n.x - CX, n.y - CY)), delay: (0.15 + i * 0.12).toFixed(2) + 's' }));
+
+const SLIDES = [
+  ['Margem', 'O faturamento sobe e o lucro não aparece.', 'Precificação por SKU com taxa, frete, imposto e ads dentro da conta. Margem real, por canal, toda semana.'],
+  ['Anúncios', 'Foto ruim, ficha incompleta, anúncio que ninguém vê.', 'Mídia de produto, ficha técnica e catálogo produzidos por SKU, no padrão de cada canal, com meta de posição.'],
+  ['Ads', 'Verba que some sem retorno claro.', 'Campanha por objetivo, ACOS meta e revisão semanal.'],
+  ['Canais', 'Dependência de um marketplace só.', 'Expansão planejada para Amazon, Shopee, TikTok Shop e loja própria, com estoque e preço integrados.'],
+  ['Estoque', 'Capital parado num canto e ruptura no outro.', 'Curva ABC, reposição com previsão de venda e giro acompanhado.'],
+  ['Caixa', 'Vende muito e não sabe se sobra.', 'Fluxo de caixa semanal e DRE por canal.'],
+  ['Sistema', 'Planilha, ERP e marketplace que não conversam.', 'ERP integrado, automações e um painel só.'],
+  ['Burocracia', 'Empresa, imposto e marca travando a operação.', 'Abertura, regime tributário e registro no INPI conduzidos com contador e advogados parceiros.'],
+];
+const pad = n => String(n).padStart(2, '0');
+const MENUS = {
+  sol: { heading: 'Soluções', links: [
+    { icon: 'message-square', title: 'Mentoria para Marketplaces', sub: 'Acompanhamento individual para vender mais e organizar a operação. A gente orienta, você executa.', href: 'Em breve.dc.html' },
+    { icon: 'shopping-bag', title: 'Criação de E-commerce', sub: 'Loja própria em Shopify, WooCommerce, NuvemShop ou Tray, integrada ao seu ERP.', href: 'Em breve.dc.html' },
+    { icon: 'layout-dashboard', title: 'Gestão de E-commerce', badge: '360', sub: 'Marketing, ads, operação e processos da sua loja própria, com acompanhamento contínuo. Sob medida com a sua necessidade.', href: 'Em breve.dc.html' },
+    { icon: 'pen-tool', title: 'Construção de Marca', sub: 'Branding, identidade visual, logo e registro no INPI.', href: 'Em breve.dc.html' },
+  ] },
+  can: { heading: 'Canais', links: [
+    { img: 'assets/marketplaces/mercado-livre-mark-mono-dark.svg', title: 'Mercado Livre', sub: 'Catálogo, reputação, Full e Ads.', href: 'Em breve.dc.html' },
+    { img: 'assets/marketplaces/shopee-mark.svg', title: 'Shopee', sub: 'Taxas, frete e estrutura de anúncios.', href: 'Em breve.dc.html' },
+    { img: 'assets/marketplaces/amazon-mark.svg', title: 'Amazon', sub: 'FBA, Buy Box e catálogo.', href: 'Em breve.dc.html' },
+    { img: 'assets/marketplaces/tiktok-mono.svg', title: 'TikTok Shop', sub: 'Conteúdo, lives e afiliados.', href: 'Em breve.dc.html' },
+    { icon: 'store', title: 'Loja própria', sub: 'Tráfego, conversão e integração com marketplaces.', href: 'Em breve.dc.html' },
+  ] },
+  fer: { heading: 'Ferramentas', links: [
+    { featured: true, title: 'Metri Hub', sub: 'Ferramenta de gestão e diagnóstico de e-commerce', href: 'https://metrihub.com.br' },
+    { icon: 'calculator', title: 'Calculadora de Preços', sub: 'Margem real por marketplace. Grátis, sem cadastro.', href: 'Em breve.dc.html' },
+  ] },
+};
+const NAV = [
+  { key: 'sol', label: 'Soluções', href: 'Em breve.dc.html' },
+  { key: 'can', label: 'Canais', href: 'Em breve.dc.html' },
+  { key: 'fer', label: 'Ferramentas', href: 'Em breve.dc.html' },
+  { label: 'Blog', href: 'Em breve.dc.html' },
+  { label: 'Contato', href: '#diagnostico' },
+];
+const POSTS = [
+  ['Margem', 'Como saber quanto realmente sobra por venda no Mercado Livre', '08 set 2026', '7 min', 'Etiquetas'],
+  ['Loja própria', 'Shopify, NuvemShop ou Tray: o que pesa na escolha de quem já vende em marketplace', '01 set 2026', '9 min', 'Tela de checkout'],
+  ['ERP', 'Migrar de sistema sem parar a operação: o checklist que usamos', '25 ago 2026', '6 min', 'Estoque'],
+  ['Anúncios', 'Por que um anúncio bom não aparece, e o que revisar toda semana', '18 ago 2026', '5 min', 'Tela de anúncio'],
+  ['Caixa', 'DRE por canal: o relatório que muda a conversa sobre crescimento', '11 ago 2026', '8 min', 'Mesa de operação'],
+  ['Estoque', 'Curva ABC na prática: reposição com previsão de venda', '04 ago 2026', '6 min', 'Prateleiras'],
+];
+const COOKIE_KEY = 'eh-cookie-consent';
+const COOKIE_TTL_MS = 365 * 24 * 60 * 60 * 1000;
+const CAL_WEEK = [
+  { wd: 'DOM', d: 13 },
+  { wd: 'SEG', d: 14 },
+  { wd: 'TER', d: 15 },
+  { wd: 'QUA', d: 16 },
+  { wd: 'QUI', d: 17, selected: true },
+  { wd: 'SEX', d: 18 },
+  { wd: 'SAB', d: 19 },
+];
+const CAL_SLOTS = ['09:00', '10:00', '11:30', '14:00', '15:30', '16:30'];
+const CAL_SELECTED_SLOT = '11:30';
+
+const LEADS_KEY = 'escalahub_leads';
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+class Component extends DCLogic {
+  state = { active: null, hover: null, touch: null, bump: false, slide: 0, fade: false, menu: null, barOpen: true, cookieVisible: false, modalOpen: false, leadBlog: { v: '', status: 'idle', msg: '' } };
+  setLead(k, patch) { this.setState(s => ({ [k]: Object.assign({}, s[k], patch) })); }
+  leadChange(k, e) {
+    const v = e.target.value;
+    this.setState(s => ({ [k]: Object.assign({}, s[k], { v: v, status: s[k].status === 'idle' ? 'idle' : 'idle', msg: '' }) }));
+  }
+  leadBlur(k) {
+    const f = this.state[k];
+    if (f.v && !EMAIL_RE.test(f.v.trim())) this.setLead(k, { status: 'error', msg: 'Digite um e-mail válido.' });
+  }
+  leadSubmit(k, origem) {
+    const f = this.state[k];
+    const email = (f.v || '').trim();
+    if (f.status === 'sending') return;
+    if (!EMAIL_RE.test(email)) { this.setLead(k, { status: 'error', msg: 'Digite um e-mail válido.' }); return; }
+    let list = [];
+    try { list = JSON.parse(localStorage.getItem(LEADS_KEY) || '[]') || []; } catch (e) { list = []; }
+    if (list.some(l => l && l.email === email && l.origem === origem)) { this.setLead(k, { status: 'dup', msg: 'Esse e-mail já está na lista.' }); return; }
+    this.setLead(k, { status: 'sending', msg: '' });
+    setTimeout(() => {
+      try {
+        list.push({ email: email, origem: origem, data: new Date().toISOString() });
+        localStorage.setItem(LEADS_KEY, JSON.stringify(list));
+      } catch (e) {}
+      this.setLead(k, { status: 'success', msg: '' });
+    }, 600);
+  }
+  leadReset(k) { this.setState({ [k]: { v: '', status: 'idle', msg: '' } }); }
+  leadVals(k, origem, prefix) {
+    const f = this.state[k];
+    const out = {};
+    out[prefix + 'Value'] = f.v;
+    out[prefix + 'Change'] = e => this.leadChange(k, e);
+    out[prefix + 'Blur'] = () => this.leadBlur(k);
+    out[prefix + 'Key'] = e => { if (e.key === 'Enter') { e.preventDefault(); this.leadSubmit(k, origem); } };
+    out[prefix + 'Submit'] = () => this.leadSubmit(k, origem);
+    out[prefix + 'Sending'] = f.status === 'sending';
+    out[prefix + 'Done'] = f.status === 'success';
+    out[prefix + 'FormVisible'] = f.status !== 'success';
+    out[prefix + 'Border'] = f.status === 'error' ? '#E5484D' : '#2A2A2E';
+    out[prefix + 'Msg'] = f.msg;
+    out[prefix + 'MsgColor'] = f.status === 'error' ? '#E5484D' : '#5C5B57';
+    out[prefix + 'BtnOpacity'] = f.status === 'sending' ? 0.7 : 1;
+    out[prefix + 'Reset'] = () => this.leadReset(k);
+    return out;
+  }
+  closeBar = () => { try { sessionStorage.setItem('eh-bar-closed', '1'); } catch (e) {} this.setState({ barOpen: false }); };
+  openModal = () => this.setState({ modalOpen: true, calLoaded: false });
+  closeModal = () => this.setState({ modalOpen: false });
+  calOnLoad = () => this.setState({ calLoaded: true });
+  openMob = () => this.setState({ mobOpen: true });
+  closeMob = () => this.setState({ mobOpen: false });
+  openModalMob = () => this.setState({ mobOpen: false, modalOpen: true, calLoaded: false });
+  onEsc = e => { if (e.key !== 'Escape') return; if (this.state.modalOpen) this.setState({ modalOpen: false }); else if (this.state.mobOpen) this.setState({ mobOpen: false }); };
+  stopClick = e => e.stopPropagation();
+  acceptCookies = () => { try { localStorage.setItem(COOKIE_KEY, JSON.stringify({ choice: 'accepted', ts: Date.now() })); } catch (e) {} this.setState({ cookieVisible: false }); };
+  essentialCookies = () => { try { localStorage.setItem(COOKIE_KEY, JSON.stringify({ choice: 'essential', ts: Date.now() })); } catch (e) {} this.setState({ cookieVisible: false }); };
+  openMenu(k) { clearTimeout(this.menuT); if (this.state.menu !== k) this.setState({ menu: k }); }
+  leaveNav = () => { clearTimeout(this.menuT); this.menuT = setTimeout(() => this.setState({ menu: null }), 120); };
+  keepMenu = () => clearTimeout(this.menuT);
+  parallaxRef = React.createRef();
+  ringRef = React.createRef();
+  reduced = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  angle = 0; speed = 0; hovering = false; autoIdx = -1;
+  progressRef = React.createRef();
+  mockRef = React.createRef();
+  seen = new WeakSet();
+
+  componentDidMount() {
+    document.addEventListener('keydown', this.onEsc);
+    try { if (sessionStorage.getItem('eh-bar-closed')) this.setState({ barOpen: false }); } catch (e) {}
+    try {
+      const rec = JSON.parse(localStorage.getItem(COOKIE_KEY) || 'null');
+      if (!rec || (Date.now() - rec.ts) > COOKIE_TTL_MS) this.cookieTimer = setTimeout(() => this.setState({ cookieVisible: true }), 1000);
+    } catch (e) { this.cookieTimer = setTimeout(() => this.setState({ cookieVisible: true }), 1000); }
+    this.io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        this.io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    this.observeAll();
+    this.nodeTimer = setInterval(() => {
+      if (this.state.hover !== null || this.state.touch !== null) return;
+      this.autoIdx = (this.autoIdx + 1) % NODES.length;
+      this.setState({ active: this.autoIdx }); this.bump();
+      clearTimeout(this.autoOff);
+      this.autoOff = setTimeout(() => this.setState({ active: null }), 1200);
+    }, 2500);
+    if (!this.reduced) {
+      let last = performance.now();
+      const tick = t => {
+        const dt = Math.min(0.1, (t - last) / 1000); last = t;
+        this.speed *= Math.max(0, 1 - dt * 3); // decai até parar quando o mouse fica parado
+        if (Math.abs(this.speed) < 0.05) this.speed = 0;
+        this.angle = (this.angle + this.speed * dt) % 360;
+        const el = this.ringRef.current; if (el) el.style.setProperty('--eh-a', this.angle.toFixed(3) + 'deg');
+        this.raf = requestAnimationFrame(tick);
+      };
+      this.raf = requestAnimationFrame(tick);
+    }
+    this.startAuto();
+    this.onScroll = () => {
+      const el = this.progressRef.current; if (!el) return;
+      const sec = el.closest('section'); if (!sec) return;
+      const r = sec.getBoundingClientRect(), vh = window.innerHeight;
+      const p = Math.min(1, Math.max(0, (vh * 0.85 - r.top) / (r.height * 0.9)));
+      el.style.width = (p * 100).toFixed(1) + '%';
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    this.onScroll();
+  }
+  componentDidUpdate() { this.observeAll(); }
+  componentWillUnmount() {
+    clearInterval(this.nodeTimer); clearInterval(this.autoTimer); clearTimeout(this.fadeT); clearTimeout(this.cookieTimer);
+    clearTimeout(this.autoOff); clearTimeout(this.touchOff); clearTimeout(this.bumpT); cancelAnimationFrame(this.raf);
+    this.io && this.io.disconnect();
+    window.removeEventListener('scroll', this.onScroll); window.removeEventListener('resize', this.onScroll);
+  }
+  observeAll() {
+    if (!this.io) return;
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (this.seen.has(el)) return;
+      this.seen.add(el);
+      const r = el.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.9) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(16px)';
+        el.style.transition = 'opacity .6s cubic-bezier(.2,.8,.2,1), transform .6s cubic-bezier(.2,.8,.2,1)';
+        this.io.observe(el);
+      }
+    });
+  }
+  startAuto() {
+    clearInterval(this.autoTimer);
+    if (this.props.autoplay === false) return;
+    this.autoTimer = setInterval(() => this.go(this.state.slide + 1), 5000);
+  }
+  go(i) {
+    const n = (i + SLIDES.length) % SLIDES.length;
+    this.setState({ fade: true });
+    clearTimeout(this.fadeT);
+    this.fadeT = setTimeout(() => this.setState({ slide: n, fade: false }), 220);
+  }
+  manual(i) { this.go(i); this.startAuto(); }
+  onHeroSectionMove = e => {
+    if (this.reduced) return;
+    const dx = this.lastMX === undefined ? 0 : e.clientX - this.lastMX;
+    this.lastMX = e.clientX;
+    this.speed = Math.max(-40, Math.min(40, this.speed + dx * 0.6));
+  };
+  onHeroMove = e => {
+    const el = this.parallaxRef.current; if (!el) return;
+    const r = e.currentTarget.getBoundingClientRect();
+    const dx = (e.clientX - r.left) / r.width - 0.5, dy = (e.clientY - r.top) / r.height - 0.5;
+    el.style.transform = `translate(${(dx * 14).toFixed(1)}px, ${(dy * 14).toFixed(1)}px)`;
+  };
+  onMockMove = e => {
+    const el = this.mockRef.current; if (!el) return;
+    const r = e.currentTarget.getBoundingClientRect();
+    const dx = (e.clientX - r.left) / r.width - 0.5, dy = (e.clientY - r.top) / r.height - 0.5;
+    el.style.transform = `translate(${(dx * -18).toFixed(1)}px, ${(dy * -18).toFixed(1)}px)`;
+  };
+  onMockLeave = () => { const el = this.mockRef.current; if (el) el.style.transform = 'translate(0px, 0px)'; };
+  onHeroEnter = () => { this.hovering = true; };
+  onHeroLeave = () => { this.hovering = false; const el = this.parallaxRef.current; if (el) el.style.transform = 'translate(0px, 0px)'; };
+  bump() {
+    if (this.reduced) return;
+    clearTimeout(this.bumpT);
+    this.setState({ bump: true });
+    this.bumpT = setTimeout(() => this.setState({ bump: false }), 150);
+  }
+  setHover(i) {
+    if (i !== null) { clearTimeout(this.autoOff); this.bump(); this.setState({ hover: i, active: null }); }
+    else this.setState({ hover: null });
+  }
+  tapNode(i) {
+    clearTimeout(this.touchOff); clearTimeout(this.autoOff); this.bump();
+    this.setState({ touch: i, active: null });
+    this.touchOff = setTimeout(() => this.setState({ touch: null }), 1500);
+  }
+
+  renderVals() {
+    const { active, hover, touch, bump, slide, fade, menu } = this.state;
+    const m = menu ? MENUS[menu] : null;
+    const hi = hover !== null ? hover : touch !== null ? touch : active;
+    const dim = hover !== null || touch !== null;
+    const cur = SLIDES[slide];
+    return Object.assign({}, {
+      navPosition: (this.props.stickyNav ?? true) ? 'sticky' : 'relative',
+      barOpen: this.state.barOpen,
+      closeBar: this.closeBar,
+      cookieVisible: this.state.cookieVisible,
+      acceptCookies: this.acceptCookies,
+      essentialCookies: this.essentialCookies,
+      modalOpen: this.state.modalOpen,
+      calLoading: !this.state.calLoaded,
+      mobOpen: !!this.state.mobOpen,
+      openMob: this.openMob,
+      closeMob: this.closeMob,
+      openModalMob: this.openModalMob,
+      mobGroups: Object.keys(MENUS).map(k => ({ heading: MENUS[k].heading, links: MENUS[k].links.map(l => ({ title: l.title, href: l.href })) })).concat([{ heading: 'Empresa', links: [{ title: 'Blog', href: 'Em breve.dc.html' }, { title: 'Sobre', href: 'Em breve.dc.html' }, { title: 'WhatsApp (11) 99795-7457', href: 'https://wa.me/5511997957457' }] }]),
+      calOnLoad: this.calOnLoad,
+      openModal: this.openModal,
+      closeModal: this.closeModal,
+      stopClick: this.stopClick,
+      weekDays: CAL_WEEK.map(w => ({ wd: w.wd, d: w.d, bg: w.selected ? '#FFB11B' : 'transparent', color: w.selected ? '#0A0A0B' : '#F4F2EE', border: w.selected ? '#FFB11B' : '#2A2A2E' })),
+      timeSlots: CAL_SLOTS.map(s => ({ label: s, bg: s === CAL_SELECTED_SLOT ? '#FFB11B' : 'transparent', color: s === CAL_SELECTED_SLOT ? '#0A0A0B' : '#F4F2EE', border: s === CAL_SELECTED_SLOT ? '#FFB11B' : '#2A2A2E' })),
+      leaveNav: this.leaveNav,
+      keepMenu: this.keepMenu,
+      menuOpen: !!m,
+      menu: m ? { heading: m.heading, links: m.links.map(l => ({ ...l, featured: !!l.featured, regular: !l.featured, hasBadge: !!l.badge, badge: l.badge || '', hasImg: !!l.img, imgEl: l.img ? React.createElement('img', { src: l.img, alt: '', style: { width: 20, height: 20, display: 'block', objectFit: 'contain', filter: /-mono(-dark|-light)?\.svg$/.test(l.img) ? 'none' : 'brightness(0) invert(.96)' } }) : null, hasIcon: !l.img && !l.featured })) } : { heading: '', links: [] },
+      navItems: NAV.map(it => {
+        const on = it.key && menu === it.key;
+        return { ...it, hasMenu: !!it.key, bg: on ? '#1C1C1F' : 'transparent', rot: on ? '180deg' : '0deg',
+          enter: it.key ? () => this.openMenu(it.key) : () => this.leaveNav(),
+          click: it.key ? e => { e.preventDefault(); clearTimeout(this.menuT); this.setState({ menu: on ? null : it.key }); } : undefined };
+      }),
+      parallaxRef: this.parallaxRef,
+      progressRef: this.progressRef,
+      onHeroMove: this.onHeroMove,
+      onHeroEnter: this.onHeroEnter,
+      onHeroSectionMove: this.onHeroSectionMove,
+      ringRef: this.ringRef,
+      onHeroLeave: this.onHeroLeave,
+      mockRef: this.mockRef,
+      onMockMove: this.onMockMove,
+      onMockLeave: this.onMockLeave,
+      nodes: NODES.map((n, i) => {
+        const on = i === hi;
+        return { ...n,
+          bg: on ? '#FFB11B' : '#0A0A0B',
+          color: on ? '#0A0A0B' : '#F4F2EE',
+          border: on ? '#FFB11B' : '#2A2A2E',
+          glow: on ? '0 0 24px rgba(255,177,27,.3)' : 'none',
+          iconColor: on ? '#0A0A0B' : '#9C9A94',
+          scale: on && !this.reduced ? 1.15 : 1,
+          opacity: dim && !on ? 0.55 : 1,
+          lineColor: on ? '#FFB11B' : 'rgba(47,85,212,.7)',
+          lineW: on ? 2 : 1,
+          pulse: on && !this.reduced,
+          path: 'M' + n.x + ' ' + n.y + ' L320 280',
+          enter: () => this.setHover(i),
+          leave: () => this.setHover(null),
+          tap: () => this.tapNode(i),
+        };
+      }),
+      core: {
+        border: hi !== null ? '#FFB11B' : '#2F55D4',
+        shadow: hi !== null ? '0 0 0 8px rgba(255,177,27,.12), 0 0 48px rgba(255,177,27,.35)' : '0 0 0 8px rgba(47,85,212,.12), 0 0 24px rgba(47,85,212,.35)',
+        scale: bump ? 1.06 : 1,
+      },
+      tabs: SLIDES.map((s, i) => ({
+        label: s[0],
+        color: i === slide ? '#F4F2EE' : '#9C9A94',
+        line: i === slide ? '#FFB11B' : 'transparent',
+        dot: i === slide ? '#FFB11B' : '#2A2A2E',
+        dotW: i === slide ? 24 : 8,
+        select: () => this.manual(i),
+      })),
+      counter: pad(slide + 1) + ' / ' + pad(SLIDES.length),
+      posts: POSTS.map(([category, title, date, read, photo]) => ({ category, title, date, read, photo })),
+      slide: { pain: cur[1], turn: cur[2] },
+      slideOpacity: fade ? 0 : 1,
+      prev: () => this.manual(slide - 1),
+      next: () => this.manual(slide + 1),
+    });
+  }
+}
+</script>
+</body>
+</html>
