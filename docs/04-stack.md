@@ -35,7 +35,7 @@ Recomendação: **Payload sobre Postgres do Supabase.** Se você já tem Directu
 - `team`: nome, cargo, foto.
 - `leads`: nome, e-mail, WhatsApp, canal principal, faixa de faturamento, origem, página.
 - `calculatorRuns`: inputs, resultado, lead (opcional).
-- `newsletterSubscribers`.
+- `newsletterSubscribers` (email, origem: blog/cursos/metrihub, criado_em, ip/UA opcional). Fase 1: só armazena; sem e-mail de confirmação até o Resend.
 - Globais: `siteSettings` (WhatsApp, e-mail, redes, CNPJ), `homepage` (números da faixa de prova).
 
 ## Ainda não decidido

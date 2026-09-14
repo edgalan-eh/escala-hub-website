@@ -63,3 +63,4 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-13 | Sem eyebrows numeradas nas seções. H2 abre a seção | aprovada | Eduardo |
 | 2026-09-14 | Gestão 360 não opera estoque nem financeiro do cliente; faz marketing, ads, promoções, processos e acompanhamento. Copy do menu ajustada | aprovada | Eduardo |
 | 2026-09-14 | Logos de terceiros no site: monocromático off-white na faixa e no menu; cor oficial só em chips pequenos. Shopify: kit oficial atual (roxo), mono na prática | proposta | Consistência com DS |
+| 2026-09-14 | Captura de e-mail: fase 1 só valida formato e armazena; sem envio. Protótipo: localStorage. Código: tabela `newsletter_subscribers` no Postgres (Vercel não permite gravar arquivo). Resend entra depois | aprovada | Eduardo pediu "validar e armazenar em arquivo"; arquivo não funciona na Vercel |
