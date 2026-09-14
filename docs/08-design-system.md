@@ -43,6 +43,7 @@ Escala (desktop): H1 64/1.05 · H2 44/1.1 · H3 28/1.2 · body 18/1.6 · small 1
 - **Botão primário**: fundo âmbar, texto ink, raio 8px, seta →. Hover: amber-deep.
 - **Botão secundário**: borda `border`, texto `text`. Usado para WhatsApp.
 - **Chip de marketplace**: 4 chips com cor oficial de cada canal, usados na hero e nas LPs.
+- **Chip de plataforma (mono)**: 28px, borda 1px, surface-2, mark 14px off-white 70% + nome em mono 11px uppercase muted. Padrão para listar marcas de terceiros dentro de cards (2026-09-14). Nunca marks soltos de tamanhos diferentes.
 - **Card do hub**: 4 cards com ícone linear, título, 1 linha, link. Metri Hub em navy com selo "em breve".
 - **Nav**: logo à esquerda; Consultoria · Resultados · Materiais · Sobre; CTA âmbar à direita. Sticky, fundo ink 90% com blur.
 
