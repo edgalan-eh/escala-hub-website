@@ -4,7 +4,7 @@ Uso: faixa "Operamos e estruturamos em" (monocromático off-white, opacidade 60�
 
 | Marca | Arquivo | Fonte | Status |
 |---|---|---|---|
-| Mercado Livre | mercado-livre-logo-horizontal.svg, -mark.svg, -completo.svg | kit do Metri Hub | ok |
+| Mercado Livre | mercado-livre-logo-horizontal.svg (cor), **mercado-livre-mono-dark.svg** (faixa), mercado-livre-mark-mono-dark.svg (menu), mercado-livre-mono-light.svg (paper) | kit Metri Hub + mono gerado (aperto de mãos vazado) | ok. Não aplicar filtro mono no colorido: o aperto de mãos some |
 | Amazon | amazon-logo-horizontal.svg, -mark.svg, amazon-mono.svg | kit Metri Hub / Simple Icons | ok |
 | Shopee | shopee-logo-horizontal.svg, -vertical, -mark, shopee-mono.svg | kit Metri Hub / Simple Icons | ok |
 | TikTok Shop | tiktok-mono.svg (ícone) | Simple Icons | ícone + "TikTok Shop" em Sora; wordmark oficial não é distribuído |
