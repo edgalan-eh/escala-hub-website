@@ -1,7 +1,7 @@
 # Home · Nav — Gestão 360 é para loja própria
 
 - Data: 2026-09-13
-- Status: pendente
+- Status: superado pelo 17 (não rodar)
 - Rodar como: edição do mega menu Soluções
 
 ```

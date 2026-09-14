@@ -14,11 +14,12 @@ Um arquivo por prompt, numerado na ordem em que rodou. Status: pendente / rodado
 | 08 | 08-home-hero-hover.md | rodado |
 | 09 | 09-home-nav-megamenu.md | rodado |
 | 10 | 10-home-nav-ajuste-solucoes.md | rodado |
-| 11 | 11-home-nav-gestao-loja-propria.md | pendente |
+| 11 | 11-home-nav-gestao-loja-propria.md | superado pelo 17 |
 | 12 | 12-em-breve-e-barra.md | pendente |
 | 13 | 13-lgpd-popup-e-cal.md | rodado |
 | 14 | 14-footer-youtube.md | pendente |
 | 15 | 15-blog-em-breve.md | pendente |
 | 16 | 16-remover-eyebrows.md | pendente |
+| 17 | 17-nav-gestao-copy.md | pendente |
 
 Regra: novo prompt = novo arquivo. **Prompt já rodado nunca é editado**; correção vira prompt novo. Ao rodar, marcar status e anexar PNG exportado em `../prototipo/NN-nome.png`.

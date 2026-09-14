@@ -28,7 +28,7 @@ Atualizado em 2026-09-10 após respostas do Eduardo.
 |---|---|
 | Mentoria para Marketplaces | Calls de alinhamento recorrentes; a Escala orienta o que fazer, o cliente executa. ML, Amazon, Shopee, TikTok Shop |
 | Criação de E-commerce | Loja própria: Shopify, WooCommerce, NuvemShop, Tray. Integração com ERP |
-| Gestão de E-commerce (360) | **Para loja própria, não marketplaces.** A Escala executa tudo: operação, estoque, financeiro, ERP, ads, marketing, acompanhamento. Abertura de empresa e regime tributário com contador parceiro |
+| Gestão de E-commerce (360) | **Para loja própria, não marketplaces.** A Escala executa: marketing, ads, promoções, processos (inclui desenho de rotinas de estoque e financeiro, não a operação deles), acompanhamento contínuo. Abertura de empresa e regime tributário com contador parceiro, na página interna |
 | Construção de Marca | Branding, identidade visual, logo, registro no INPI |
 
 **Três pilares na home:** Crescimento comercial · Estrutura operacional · Tecnologia e dados. Mentoria é formato, não pilar. Burocracia (abertura, tributário, INPI) entra em Estrutura operacional.

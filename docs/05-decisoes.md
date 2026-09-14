@@ -61,3 +61,4 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-13 | H1 da Home (editado pelo Eduardo no Claude Design): "Ajudamos a construir e escalar sua operação de e-commerce." | aprovada | Eduardo |
 | 2026-09-13 | Seção 07 — Blog na Home; até haver posts, estado "em breve" com captura de e-mail | aprovada | Eduardo |
 | 2026-09-13 | Sem eyebrows numeradas nas seções. H2 abre a seção | aprovada | Eduardo |
+| 2026-09-14 | Gestão 360 não opera estoque nem financeiro do cliente; faz marketing, ads, promoções, processos e acompanhamento. Copy do menu ajustada | aprovada | Eduardo |
