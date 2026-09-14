@@ -23,7 +23,10 @@ Páginas internas, calculadora, blog real, Resend, pixels, Payload.
 ## Status (2026-09-14)
 Itens 1–8 feitos. Produção no ar na URL da Vercel. Faltam: domínio (DNS), Search Console, revisão do Eduardo.
 
-## Trocar o domínio (quando o Eduardo autorizar)
-1. Vercel: `vercel domains add escalahub.com.br` (ou painel → Domains).
-2. registro.br → DNS: apagar registros do Framer; criar `A @ 76.76.21.21` e `CNAME www cname.vercel-dns.com`.
-3. Propagação 1–24h. Depois: Search Console → adicionar propriedade, enviar sitemap `https://escalahub.com.br/sitemap.xml`, pedir reindexação da Home.
+## Domínio — FEITO em 2026-09-14
+DNS fica no **Cloudflare** (não no registro.br). Registros em produção:
+`A @ 76.76.21.21` (DNS only) · `CNAME www cname.vercel-dns.com` (DNS only) · 5 MX do Google Workspace · 1 TXT google-site-verification.
+Certificado emitido pela Vercel. Root e www respondem 200 em HTTPS.
+
+## Falta
+- Search Console: enviar `https://escalahub.com.br/sitemap.xml` e pedir reindexação da Home (a verificação por TXT já existe).

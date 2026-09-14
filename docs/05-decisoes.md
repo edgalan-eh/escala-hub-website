@@ -73,3 +73,7 @@ Formato: data · decisão · status (proposta / aprovada / revertida) · motivo.
 | 2026-09-14 | App Next.js vive na raiz do repo (não em `web/`), para a integração Git da Vercel não precisar de root directory | aprovada | Simplicidade |
 | 2026-09-14 | Deploy de produção na Vercel: projeto `escala-hub-website`, Git conectado (push em `main` = deploy) | marco | https://escala-hub-website-myabf3c3n-edgalan-ehs-projects.vercel.app |
 | 2026-09-14 | Programa de parceiros com "20%" e "48h" publicado como veio do protótipo; confirmar números | pendente Eduardo | Auditoria item 7 |
+| 2026-09-14 | **LANÇAMENTO fase 0:** escalahub.com.br no ar na Vercel. DNS no Cloudflare (A 76.76.21.21, CNAME www → cname.vercel-dns.com, ambos DNS only). MX do Google e TXT do Search Console preservados | marco | Framer desativado |
+| 2026-09-14 | Barra do topo: fundo ink com ponto âmbar e "Site em construção", sem botão fechar | aprovada | Protótipo |
+| 2026-09-14 | Sem badges no hero nem na coluna da marca do footer; "Contato" no lugar de "Calculadora" na coluna Empresa; sem "Feito em São Paulo" | aprovada | Protótipo |
+| 2026-09-14 | Diagrama da hero é estático (sem rotação automática) | aprovada | Etiquetas saíam tortas; protótipo é estático |
