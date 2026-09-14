@@ -9,9 +9,10 @@ import { CalButton } from "./CalModal";
 export function Footer() {
   return (
     <footer style={{ background: "var(--ink)", borderTop: "1px solid var(--border)" }}>
+      <style>{`.footer-grid{grid-template-columns:1fr}@media(min-width:640px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:1024px){.footer-grid{grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr)) minmax(0,1.35fr)}}`}</style>
       <div className="container pt-20 pb-10">
-        <div className="grid gap-12" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))" }}>
-          <div className="flex flex-col items-start gap-5" style={{ gridColumn: "span 2" }}>
+        <div className="footer-grid grid gap-x-8 gap-y-12">
+          <div className="flex flex-col items-start gap-5">
             <Image src="/brand/escala/logo-escalahub-dark.svg" alt="Escala Hub" width={180} height={33} style={{ height: 32, width: "auto" }} />
             <p className="t-small" style={{ color: "var(--muted)", maxWidth: 320 }}>
               Estruturamos e aceleramos operações de e-commerce.
@@ -65,7 +66,7 @@ export function Footer() {
               <WhatsAppIcon size={17} />
               {site.phoneDisplay}
             </a>
-            <a href={`mailto:${site.email}`} className="t-small inline-flex items-center gap-2.5 hover:text-[var(--amber)]" style={{ wordBreak: "break-word" }}>
+            <a href={`mailto:${site.email}`} className="t-small inline-flex items-center gap-2.5 hover:text-[var(--amber)]" style={{ whiteSpace: "nowrap" }}>
               <Mail size={17} strokeWidth={1.75} aria-hidden="true" style={{ flex: "0 0 17px" }} />
               {site.email}
             </a>
