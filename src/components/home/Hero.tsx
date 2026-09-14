@@ -47,11 +47,10 @@ function Diagram() {
   return (
     <div
       className="relative mx-auto"
-      style={{ width: 640, height: 560, maxWidth: "100%", animation: reduced ? "none" : "spin-ring 60s linear infinite", animationPlayState: hover !== null ? "paused" : "running" }}
+      style={{ width: 640, height: 560, maxWidth: "100%" }}
       onMouseLeave={() => setHover(null)}
     >
-      <style>{`@keyframes spin-ring{to{--eh-a:360deg}}@property --eh-a{syntax:'<angle>';inherits:true;initial-value:0deg}`}</style>
-      <div className="absolute inset-0" style={{ transform: "rotate(var(--eh-a,0deg))" }}>
+      <div className="absolute inset-0">
         <svg viewBox="0 0 640 560" className="absolute inset-0 h-full w-full overflow-visible">
           {heroNodes.map((n, i) => {
             const len = Math.round(Math.hypot(n.x - CX, n.y - CY));
@@ -94,7 +93,7 @@ function Diagram() {
               style={{
                 left: n.x,
                 top: n.y,
-                transform: `translate(-50%,-50%) rotate(calc(-1 * var(--eh-a,0deg))) scale(${on && !reduced ? 1.15 : 1})`,
+                transform: `translate(-50%,-50%) scale(${on && !reduced ? 1.15 : 1})`,
                 background: on ? "var(--amber)" : "var(--ink)",
                 color: on ? "var(--ink)" : "var(--text)",
                 border: `1px solid ${on ? "var(--amber)" : "var(--border)"}`,
@@ -144,10 +143,10 @@ export function Hero() {
             <span className="whitespace-nowrap">
               <span
                 aria-hidden="true"
-                className="mr-2.5 ml-0.5 inline-flex h-[0.8em] w-[0.8em] items-center justify-center rounded-[0.22em] align-[-0.1em]"
+                className="mr-3 inline-flex h-[1em] w-[1em] items-center justify-center rounded-[0.2em] align-[-0.16em]"
                 style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
               >
-                <Icon name="shopping-cart" size={30} style={{ color: "var(--amber)", width: "0.48em", height: "0.48em" }} />
+                <Icon name="shopping-cart" size={34} style={{ color: "var(--amber)", width: "0.55em", height: "0.55em" }} />
               </span>
               e-commerce
             </span>
