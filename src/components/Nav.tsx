@@ -101,8 +101,9 @@ export function Nav() {
   }, [mobile]);
 
   return (
-    <header className="sticky top-0 z-[70]" style={{ background: "var(--nav-bg)", backdropFilter: "blur(12px)", borderBottom: "1px solid var(--border)" }}>
-      <div className="container flex h-[72px] items-center justify-between gap-6">
+    <header className="sticky top-0 z-[70]" style={{ borderBottom: "1px solid var(--border)" }}>
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0" style={{ background: "var(--nav-bg)", backdropFilter: "blur(12px)" }} />
+      <div className="container relative flex h-[72px] items-center justify-between gap-6">
         <Link href="/" aria-label="Escala Hub, início" className="shrink-0">
           <Image src="/brand/escala/logo-escalahub-dark.svg" alt="Escala Hub" width={150} height={27} priority style={{ height: 26, width: "auto" }} />
         </Link>
