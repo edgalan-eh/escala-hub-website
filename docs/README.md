@@ -4,6 +4,7 @@ Documentação viva do negócio e do produto. Atualizada a cada decisão relevan
 
 | Doc | Conteúdo |
 |---|---|
+| [CONTEXTO-ESCALA-HUB.md](CONTEXTO-ESCALA-HUB.md) | **Contexto geral num arquivo só.** Para projetos no Claude Cowork |
 | [01-briefing.md](01-briefing.md) | Quem é a Escala Hub, oferta, negócios, público, objetivos do site |
 | [02-grill-site-atual.md](02-grill-site-atual.md) | Crítica do site atual e das ideias iniciais |
 | [03-arquitetura-do-site.md](03-arquitetura-do-site.md) | Sitemap por fase, estrutura de cada página |
