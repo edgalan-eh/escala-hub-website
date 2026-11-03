@@ -30,3 +30,9 @@ Certificado emitido pela Vercel. Root e www respondem 200 em HTTPS.
 
 ## Falta
 - Search Console: enviar `https://escalahub.com.br/sitemap.xml` e pedir reindexação da Home (a verificação por TXT já existe).
+
+## Cal.com — configuração do evento (painel, não código)
+Event Types → Consultoria Gratuita → Advanced → Booking questions → Add a question:
+`whatsapp` · tipo Phone · label "WhatsApp (com DDD)" · required.
+O modal do site usa o embed, então qualquer mudança lá aparece no site sem deploy.
+Opcional: Workflows → "Before event starts" → lembrete por SMS/WhatsApp, para reduzir no-show.

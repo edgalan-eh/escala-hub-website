@@ -108,6 +108,6 @@ Cortados: "Franquias" e "Parceiro Escala Hub".
 - WhatsApp / telefone: (11) 99795-7457 · wa.me/5511997957457
 - E-mail: contato@escalahub.com.br
 - GitHub: usuário `edgalan-eh` (SSH ok). Repo `escala-hub-website` a criar
-- Agenda (CTA "Solicitar diagnóstico"): https://cal.com/eduardo-galan/consultoria-gratuita
+- Agenda (CTA "Solicitar diagnóstico"): https://cal.com/eduardo-galan/consultoria-gratuita — evento de **30 min**, com pergunta obrigatória de WhatsApp
 - Instagram: @escalahub · LinkedIn: https://www.linkedin.com/company/escala-hub/ · YouTube: sem canal ainda; ícone fica no footer sem link
 - Domínio: escalahub.com.br no registro.br, DNS apontando para Framer (site antigo). Trocar para Vercel no lançamento.
