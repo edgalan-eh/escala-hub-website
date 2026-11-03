@@ -64,5 +64,5 @@ Texto: A equipe da Escala Hub opera a Pratelar no Mercado Livre. Quando a regra 
 
 ## CTA final
 **H2:** Comece pelo raio-x gratuito da sua conta.
-**Texto:** 45 minutos, tela compartilhada, sem compromisso. Você sai sabendo onde está perdendo margem e ranking.
+**Texto:** 30 minutos, tela compartilhada, sem compromisso. Você sai sabendo onde está perdendo margem e ranking.
 **CTA:** Agendar diagnóstico gratuito →

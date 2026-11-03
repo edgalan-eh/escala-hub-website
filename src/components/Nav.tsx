@@ -59,7 +59,7 @@ function StartHere({ compact = false }: { compact?: boolean }) {
         Não sabe qual frente faz sentido agora?
       </p>
       <p className="mt-3 text-sm" style={{ color: "var(--muted)" }}>
-        Em 45 minutos mapeamos o gargalo da sua operação e indicamos o caminho.
+        Em 30 minutos mapeamos o gargalo da sua operação e indicamos o caminho.
       </p>
       <button onClick={open} className="link-arrow mt-auto pt-6" style={{ color: "var(--amber)" }}>
         Solicitar diagnóstico →

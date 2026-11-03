@@ -48,7 +48,7 @@ export function CalModalProvider({ children }: { children: React.ReactNode }) {
           >
             <div className="flex items-start justify-between gap-4 border-b px-6 py-5" style={{ borderColor: "var(--border)" }}>
               <div>
-                <p className="eyebrow">Diagnóstico gratuito · 45 min</p>
+                <p className="eyebrow">Diagnóstico gratuito · 30 min</p>
                 <p className="t-small mt-1" style={{ color: "var(--muted)" }}>
                   Escolha um horário. Sem compromisso.
                 </p>
