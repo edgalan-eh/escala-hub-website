@@ -1,4 +1,4 @@
-const email = "eduardo@escalahub.com.br";
+const email = "contato@escalahub.com.br";
 
 export const site = {
   name: "Escala Hub",
