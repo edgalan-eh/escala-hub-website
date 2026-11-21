@@ -1,16 +1,11 @@
 export function LegalPage({ title, updated, children }: { title: string; updated: string; children: React.ReactNode }) {
   return (
-    <section className="section" style={{ background: "var(--ink)" }}>
-      <div className="container">
+    <section className="sec">
+      <div className="wrap">
         <div className="mx-auto max-w-[760px]">
-          <p className="eyebrow">Legal</p>
-          <h1 className="t-h2 mt-4">{title}</h1>
-          <p className="t-label-sm mt-3" style={{ color: "var(--muted)", textTransform: "none", letterSpacing: "0.02em" }}>
-            Última atualização · {updated}
-          </p>
-          <div className="t-small mt-10" style={{ color: "var(--muted-2)" }}>
-            {children}
-          </div>
+          <h1 className="h2">{title}</h1>
+          <p className="small mt-3 text-muted">Última atualização: {updated}</p>
+          <div className="prosa mt-2">{children}</div>
         </div>
       </div>
     </section>

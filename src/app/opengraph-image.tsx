@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "nodejs";
-export const alt = "Escala Hub — Consultoria de E-commerce e Marketplaces";
+export const alt = "Escala Hub: sistema para quem vende em marketplaces";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -16,7 +16,7 @@ export default function OG() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 72,
-          background: "#0A0A0B",
+          background: "#0F1B33",
           color: "#F4F2EE",
           fontFamily: "sans-serif",
         }}
@@ -30,9 +30,8 @@ export default function OG() {
           <span style={{ fontSize: 40, fontWeight: 700, letterSpacing: -1 }}>Escala Hub</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-          <span style={{ fontSize: 22, color: "#FFB11B", letterSpacing: 4, textTransform: "uppercase" }}>Consultoria de e-commerce e marketplaces</span>
-          <span style={{ fontSize: 64, fontWeight: 700, lineHeight: 1.05, letterSpacing: -2, maxWidth: 1000 }}>Ajudamos a construir e escalar sua operação de e-commerce.</span>
-          <span style={{ fontSize: 26, color: "#9C9A94", maxWidth: 900 }}>Estratégia, gestão e tecnologia para marketplaces e canais próprios, com margem e previsibilidade.</span>
+          <span style={{ fontSize: 64, fontWeight: 700, lineHeight: 1.05, letterSpacing: -2, maxWidth: 1000 }}>Saiba quanto sobra em cada pedido.</span>
+          <span style={{ fontSize: 26, color: "#A6B1CC", maxWidth: 900 }}>Margem real, custos, anúncios, pós-venda e compras para quem vende no Mercado Livre, Shopee e Amazon.</span>
         </div>
       </div>
     ),

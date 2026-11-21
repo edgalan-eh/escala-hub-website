@@ -1,0 +1,400 @@
+@import "tailwindcss";
+
+/*
+  Tokens da marca Escala Hub (navy + azul). Um acento só: azul.
+  Violeta aparece apenas em elementos de IA (regra do design system do app).
+  Raios: botões e selos em pílula, cartões 16px, campos 10px.
+  Camadas: nav 40, menu do celular 50.
+*/
+:root {
+  --bg: #f6f7fa;
+  --surface: #fdfdfe;
+  --surface-2: #eef0f5;
+  --line: #dde1ea;
+  --text: #0f1b33;
+  --muted: #55607a;
+  --accent: #2f55d4;
+  --accent-hover: #2647b8;
+  --on-accent: #fdfdfe;
+  --accent-soft: #e6ebfb;
+  --link: #2a4cc0;
+  --ia: #5b3fe0;
+  --ia-soft: #eeeaff;
+  --ok: #1d7a4f;
+  --ok-soft: #e2f4ea;
+  --bad: #c2353a;
+  --warn-ink: #8a5a00;
+  --warn-soft: #fdf1d8;
+  --tile: #0f1b33;
+  --tile-text: #f1f3f9;
+  --tile-muted: #a6b1cc;
+  --tile-line: #26365c;
+  --shadow: 0 18px 48px -24px rgba(15, 27, 51, 0.28);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #131c30;
+    --surface-2: #18233c;
+    --line: #25324f;
+    --text: #eef1f7;
+    --muted: #a3aec6;
+    --accent: #3d60e8;
+    --accent-hover: #5273f2;
+    --on-accent: #fdfdfe;
+    --accent-soft: #1b2a55;
+    --link: #9db0f5;
+    --ia: #b3a4ff;
+    --ia-soft: #221d47;
+    --ok: #5fd39b;
+    --ok-soft: #12301f;
+    --bad: #ff8a8d;
+    --warn-ink: #f5c76a;
+    --warn-soft: #33290f;
+    --tile: #18233c;
+    --tile-text: #eef1f7;
+    --tile-muted: #a3aec6;
+    --tile-line: #2c3b5e;
+    --shadow: 0 18px 48px -24px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-link: var(--link);
+  --color-ia: var(--ia);
+  --color-ia-soft: var(--ia-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-bad: var(--bad);
+  --color-tile: var(--tile);
+  --color-tile-text: var(--tile-text);
+  --color-tile-muted: var(--tile-muted);
+  --color-tile-line: var(--tile-line);
+  --font-display: var(--font-sora), system-ui, sans-serif;
+  --font-body: var(--font-dm), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+/* ---- layout ---- */
+.wrap {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+@media (min-width: 768px) {
+  .wrap {
+    padding-inline: 32px;
+  }
+}
+
+.sec {
+  padding-block: 72px;
+}
+@media (min-width: 1024px) {
+  .sec {
+    padding-block: 104px;
+  }
+}
+
+/* ---- tipografia ---- */
+.h1 {
+  font: 700 clamp(36px, 4.6vw, 58px) / 1.06 var(--font-display);
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+.h2 {
+  font: 600 clamp(28px, 3.2vw, 40px) / 1.12 var(--font-display);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.h3 {
+  font: 600 20px / 1.3 var(--font-display);
+  letter-spacing: -0.015em;
+}
+.lead {
+  font-size: clamp(17px, 1.5vw, 19px);
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 60ch;
+}
+.small {
+  font-size: 15px;
+  line-height: 1.55;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- botões (pílula) ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 46px;
+  padding-inline: 22px;
+  border-radius: 9999px;
+  font: 600 15px / 1 var(--font-body);
+  white-space: nowrap;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    transform 150ms ease;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn-primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+.btn-ghost {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+}
+.btn-ghost:hover {
+  border-color: var(--muted);
+}
+.btn-sm {
+  height: 40px;
+  padding-inline: 18px;
+  font-size: 14px;
+}
+
+.link {
+  color: var(--link);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 150ms ease;
+}
+.link:hover {
+  text-decoration-color: currentColor;
+}
+
+/* ---- peças ---- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.selo {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding-inline: 10px;
+  border-radius: 9999px;
+  font: 600 12.5px / 1 var(--font-body);
+  white-space: nowrap;
+}
+.selo-disponivel {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+.selo-liberacao {
+  background: var(--warn-soft);
+  color: var(--warn-ink);
+}
+.selo-em-breve {
+  background: var(--surface-2);
+  color: var(--muted);
+}
+.selo-ia {
+  background: var(--ia-soft);
+  color: var(--ia);
+}
+
+/* marca de canal: sempre sobre fundo branco (regra dos logos de terceiros) */
+.marca-canal {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+}
+.marca-canal img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* logo: troca por tema */
+.logo-escuro {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .logo-claro {
+    display: none;
+  }
+  .logo-escuro {
+    display: block;
+  }
+}
+
+/* papel quadriculado do bloco de produção */
+.quadriculado {
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* controle deslizante da simulação */
+.faixa {
+  appearance: none;
+  width: 100%;
+  height: 28px;
+  background: transparent;
+  cursor: pointer;
+}
+.faixa::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--tile-line);
+}
+.faixa::-moz-range-track {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--tile-line);
+}
+.faixa::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background: #fdfdfe;
+  border: 4px solid var(--accent);
+}
+.faixa::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fdfdfe;
+  border: 4px solid var(--accent);
+}
+
+/* texto longo das páginas legais */
+.prosa h2 {
+  font: 600 22px / 1.3 var(--font-display);
+  letter-spacing: -0.015em;
+  margin-top: 44px;
+}
+.prosa h3 {
+  font: 600 17px / 1.4 var(--font-body);
+  margin-top: 24px;
+}
+.prosa p,
+.prosa ul {
+  margin-top: 14px;
+  color: var(--muted);
+}
+.prosa ul {
+  list-style: disc;
+  padding-left: 22px;
+}
+.prosa li + li {
+  margin-top: 8px;
+}
+.prosa strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.prosa a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---- movimento: entrada suave ao rolar ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 600ms var(--ease),
+    transform 600ms var(--ease);
+  transition-delay: calc(var(--i, 0) * 60ms);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .btn {
+    transition: none;
+  }
+}
+}
